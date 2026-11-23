@@ -1,0 +1,470 @@
+[2026-11-22 11:11:28] ### connected to quietcool-lora-v3 (ESPHome 2026.11.0, compiled 2026-11-22 10:21:20 -0700)
+[2026-11-22 11:11:28] [I][app:163]: ESPHome version 2026.11.0 compiled on 2026-11-22 10:21:20 -0700
+[2026-11-22 11:11:28] [I][app:170]: ESP32 Chip: ESP32-S3 rev0.2, 2 core(s)
+[2026-11-22 11:11:28] [W][app:188]: Set flash_chip: generic under esp32 > framework > advanced to save IRAM
+[2026-11-22 11:11:28] [C][logger:329]: Logger:
+  Max Level: DEBUG
+  Initial Level: DEBUG
+[2026-11-22 11:11:28] [C][logger:336]:   Log Baud Rate: 115200
+  Hardware UART: USB_SERIAL_JTAG
+[2026-11-22 11:11:28] [C][logger:345]:   Task Log Buffer Size: 768 bytes
+[2026-11-22 11:11:28] [C][i2c:174]: I2C Bus:
+[2026-11-22 11:11:28] [C][i2c:175]:   SDA Pin: GPIO17
+  SCL Pin: GPIO18
+  Frequency: 400000 Hz
+[2026-11-22 11:11:28] [C][i2c:191]:   Recovery: bus successfully recovered
+[2026-11-22 11:11:28] [C][i2c:027]: Results from bus scan:
+[2026-11-22 11:11:28] [C][i2c:034]: Found device at address 0x3C
+[2026-11-22 11:11:28] [C][spi:076]: SPI bus:
+[2026-11-22 11:11:28] [C][spi:137]:   CLK Pin: GPIO9
+[2026-11-22 11:11:28] [C][spi:137]:   SDI Pin: GPIO11
+[2026-11-22 11:11:28] [C][spi:137]:   SDO Pin: GPIO10
+[2026-11-22 11:11:28] [C][spi:087]:   Using HW SPI: SPI2_HOST
+[2026-11-22 11:11:28] [C][switch.gpio:105]: GPIO Switch 'vext_power'
+  Restore Mode: always ON
+[2026-11-22 11:11:28] [C][switch.gpio:137]:   Pin: GPIO36
+[2026-11-22 11:11:28] [C][switch.gpio:105]: GPIO Switch 'Test: VBAT ADC Enable (GPIO37)'
+  Restore Mode: always ON
+[2026-11-22 11:11:28] [C][switch.gpio:137]:   Pin: GPIO37
+[2026-11-22 11:11:28] [STATE] Fan State Known = True
+[2026-11-22 11:11:28] [STATE] Timer State Known = True
+[2026-11-22 11:11:28] [STATE] Fan Timer Remaining Known = False
+[2026-11-22 11:11:28] [STATE] Fan Confirmed Off = True
+[2026-11-22 11:11:28] [STATE] Controller Fault = False
+[2026-11-22 11:11:28] [STATE] Test: PRG Button (GPIO0) = False
+[2026-11-22 11:11:28] [STATE] QuietCool Fan = False
+[2026-11-22 11:11:28] [STATE] Test: Onboard LED (GPIO35, non-inverted) = False
+[2026-11-22 11:11:28] [STATE] Timer Remaining = nan
+[2026-11-22 11:11:28] [STATE] TX Count = 30.0
+[2026-11-22 11:11:28] [STATE] RX Valid Count = 242.0
+[2026-11-22 11:11:28] [STATE] RX Rejected Count = 8.0
+[2026-11-22 11:11:28] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:11:28] [STATE] Last RX Length = 6.0
+[2026-11-22 11:11:28] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 11:11:28] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 11:11:28] [STATE] Loop Stack Min Free = 8702.0
+[2026-11-22 11:11:28] [STATE] Heap Free = 241780.0
+[2026-11-22 11:11:28] [STATE] WiFi Signal = -52.0
+[2026-11-22 11:11:28] [STATE] Uptime = 1504.188
+[2026-11-22 11:11:28] [STATE] Test: VBAT ADC Enable (GPIO37) = True
+[2026-11-22 11:11:28] [STATE] Command Confirmation Status = confirmed
+[2026-11-22 11:11:28] [STATE] Fan Evidence Source = post_command
+[2026-11-22 11:11:28] [STATE] Last TX Command = 0x90
+[2026-11-22 11:11:28] [STATE] Last Valid RX Frame = 0x90
+[2026-11-22 11:11:28] [STATE] Last Confirmed Fan State = off
+[2026-11-22 11:11:28] [STATE] Fan Speed Capability = 2
+[2026-11-22 11:11:28] [STATE] Remote Sender ID = 0xCB00E0C6
+[2026-11-22 11:11:28] [STATE] Reset Reason = Reboot request from api
+[2026-11-22 11:11:28] [STATE] ESPHome Version = 2026.11.0 (config hash 0xdcec3636, built 2026-11-22 10:21:20 -0700)
+[2026-11-22 11:11:28] [STATE] Fan Timer = None
+[2026-11-22 11:11:28] [C][gpio.output:009]: Binary Output:
+[2026-11-22 11:11:28] [C][gpio.output:137]:   Pin: GPIO35
+[2026-11-22 11:11:28] [C][gpio.binary_sensor:191]: GPIO Binary Sensor 'Test: PRG Button (GPIO0)'
+[2026-11-22 11:11:28] [C][gpio.binary_sensor:137]:   Pin: GPIO0
+[2026-11-22 11:11:28] [C][gpio.binary_sensor:068]:   Mode: interrupt
+[2026-11-22 11:11:28] [C][gpio.binary_sensor:070]:   Interrupt Type: ANY_EDGE
+[2026-11-22 11:11:28] [C][template.sensor:017]: Template Sensor 'Last RX RSSI'
+  State Class: 'measurement'
+  Unit of Measurement: 'dBm'
+  Accuracy Decimals: 1
+[2026-11-22 11:11:28] [C][template.sensor:207]:   Device Class: 'signal_strength'
+[2026-11-22 11:11:28] [C][template.sensor:367]:   Update Interval: 60.000s
+[2026-11-22 11:11:28] [C][template.sensor:017]: Template Sensor 'Last RX Length'
+  State Class: ''
+  Unit of Measurement: 'bytes'
+  Accuracy Decimals: 0
+[2026-11-22 11:11:28] [C][template.sensor:367]:   Update Interval: 60.000s
+[2026-11-22 11:11:28] [C][template.sensor:017]: Template Sensor 'Loop Stack Min Free'
+  State Class: ''
+  Unit of Measurement: 'B'
+  Accuracy Decimals: 0
+[2026-11-22 11:11:28] [C][template.sensor:367]:   Update Interval: 30.000s
+[2026-11-22 11:11:28] [C][uptime.sensor:017]: Uptime Sensor 'Uptime'
+  State Class: 'total_increasing'
+  Unit of Measurement: 's'
+  Accuracy Decimals: 0
+[2026-11-22 11:11:28] [C][uptime.sensor:207]:   Device Class: 'duration'
+[2026-11-22 11:11:28] [C][uptime.sensor:199]:   Icon: 'mdi:timer-outline'
+[2026-11-22 11:11:28] [C][uptime.sensor:019]:   Type: Seconds
+[2026-11-22 11:11:28] [C][light:098]: Light 'Test: Onboard LED (GPIO35, non-inverted)'
+[2026-11-22 11:11:28] [C][quietcool.fan:191]: QuietCool Confirmed Fan 'QuietCool Fan'
+[2026-11-22 11:11:28] [C][quietcool.fan:296]:   Speed: YES
+  Speed count: 2
+[2026-11-22 11:11:28] [C][quietcool.timer:012]: QuietCool Fan Timer
+[2026-11-22 11:11:28] [C][quietcool.timer:013]:   Every option transmits: a duration starts the fan (at LOW if stopped); None means run continuously and will restart a fan whose timer expired.
+[2026-11-22 11:11:28] [C][version.text_sensor:191]: Version Text Sensor 'ESPHome Version'
+[2026-11-22 11:11:28] [C][version.text_sensor:199]:   Icon: 'mdi:new-box'
+[2026-11-22 11:11:28] [C][wifi_info:191]: IP Address 'IP Address'
+[2026-11-22 11:11:28] [C][adc:017]: ADC Sensor 'Test: VBAT ADC Raw (GPIO1)'
+  State Class: 'measurement'
+  Unit of Measurement: 'V'
+  Accuracy Decimals: 3
+[2026-11-22 11:11:28] [C][adc:207]:   Device Class: 'voltage'
+[2026-11-22 11:11:28] [C][adc:137]:   Pin: GPIO1
+[2026-11-22 11:11:28] [C][adc:131]:   Channel:       0
+  Unit:          ADC1
+  Attenuation:   12 dB
+  Samples:       1
+  Sampling mode: average
+  Setup Status:
+    Handle Init:  OK
+    Config:       OK
+    Calibration:  OK
+    Overall Init: OK
+[2026-11-22 11:11:28] [C][adc:367]:   Update Interval: 10.000s
+[2026-11-22 11:11:29] [C][quietcool.button:191]: QuietCool Controller Button 'Refresh Fan State'
+[2026-11-22 11:11:29] [C][quietcool.button:191]: QuietCool Controller Button 'Learn Remote ID'
+[2026-11-22 11:11:29] [C][quietcool.button:191]: QuietCool Controller Button 'Forget Remote ID'
+[2026-11-22 11:11:29] [C][ssd1306_i2c:020]: I2C SSD1306
+  Rotations: 0 °
+  Dimensions: 128px x 64px
+[2026-11-22 11:11:29] [C][ssd1306_i2c:021]:   Model: SSD1306 128x64
+  External VCC: NO
+  Flip X: YES
+  Flip Y: YES
+  Offset X: 0
+  Offset Y: 0
+  Inverted Color: NO
+[2026-11-22 11:11:29] [C][ssd1306_i2c:031]:   Address: 0x3C
+[2026-11-22 11:11:29] [C][ssd1306_i2c:137]:   Reset Pin: GPIO21
+[2026-11-22 11:11:29] [C][ssd1306_i2c:367]:   Update Interval: 1.000s
+[2026-11-22 11:11:29] [C][sx126x:507]: SX126x:
+[2026-11-22 11:11:29] [C][sx126x:137]:   CS Pin: GPIO8
+[2026-11-22 11:11:29] [C][sx126x:137]:   BUSY Pin: GPIO13
+[2026-11-22 11:11:29] [C][sx126x:137]:   RST Pin: GPIO12
+[2026-11-22 11:11:29] [C][sx126x:137]:   DIO1 Pin: GPIO14
+[2026-11-22 11:11:29] [C][sx126x:512]:   HW Version: SX1261 V2D 2D02
+  Frequency: 433920000 Hz
+  Bandwidth: 58600 Hz
+  PA Power: 17 dBm
+  PA Ramp: 40 us
+  Payload Length: 0
+  CRC Enable: FALSE
+  Rx Start: TRUE
+[2026-11-22 11:11:29] [C][sx126x:535]:   Modulation: FSK
+  Deviation: 10000 Hz
+  Shaping: NONE
+  Preamble Size: 8
+  Preamble Detect: 0
+  Bitrate: 2400b/s
+[2026-11-22 11:11:29] [C][sx126x:561]:   Sync Value: 0x2dd4
+[2026-11-22 11:11:29] [C][sx126x:564]:   Whitening Enable: FALSE
+[2026-11-22 11:11:29] [C][network:050]: Network:
+  TCP send buffer: 5760 bytes
+[2026-11-22 11:11:29] [C][captive_portal:134]: Captive Portal:
+[2026-11-22 11:11:29] [C][wifi:1771]: WiFi:
+  Local MAC: <MAC>
+  Connected: YES
+[2026-11-22 11:11:29] [C][wifi:1461]:   IP Address: <IP>
+[2026-11-22 11:11:29] [C][wifi:1472]:   SSID: '<SSID>'
+  BSSID: <MAC>
+  Hostname: 'quietcool-lora-v3'
+  Signal strength: -53 dB ▂▄▆█
+  Channel: 6
+  Subnet: 255.255.255.0
+  Gateway: <IP>
+  DNS1: <IP>
+  DNS2: 0.0.0.0
+[2026-11-22 11:11:29] [C][esphome.ota:132]: Over-The-Air updates:
+  Address: quietcool-lora-v3.local:3232
+  Version: 2
+  Encryption: required
+[2026-11-22 11:11:29] [C][safe_mode:058]: Safe Mode:
+  Successful after: 60s
+  Invoke after: 10 attempts
+  Duration: 300s
+[2026-11-22 11:11:29] [C][safe_mode:075]:   Bootloader rollback: support unknown
+[2026-11-22 11:11:29] [C][web_server.ota:245]: Web Server OTA
+[2026-11-22 11:11:29] [C][api:374]: Server:
+  Address: quietcool-lora-v3.local:6053
+  Listen backlog: 4
+  Max connections: 5
+[2026-11-22 11:11:29] [C][api:381]:   Noise encryption: YES
+[2026-11-22 11:11:29] [C][wifi_signal.sensor:017]: WiFi Signal 'WiFi Signal'
+  State Class: 'measurement'
+  Unit of Measurement: 'dBm'
+  Accuracy Decimals: 0
+[2026-11-22 11:11:29] [C][wifi_signal.sensor:207]:   Device Class: 'signal_strength'
+[2026-11-22 11:11:29] [C][mdns:336]: mDNS:
+  Hostname: quietcool-lora-v3
+[2026-11-22 11:11:29] [C][debug:017]: Debug component:
+[2026-11-22 11:11:29] [C][debug:017]:   Free space on heap 'Heap Free'
+    State Class: 'measurement'
+    Unit of Measurement: 'B'
+    Accuracy Decimals: 0
+[2026-11-22 11:11:29] [C][debug:199]:     Icon: 'mdi:counter'
+[2026-11-22 11:11:29] [D][debug:031]: ESPHome version 2026.11.0
+[2026-11-22 11:11:29] [D][debug:035]: Free Heap Size: 225584 bytes
+[2026-11-22 11:11:29] [D][debug:044]: Uptime: 0d 00h 25m 57s
+[2026-11-22 11:11:29] [D][debug:260]: ESP32 debug info:
+  Chip: ESP32-S3
+  Cores: 2
+  Revision: 2
+  CPU Frequency: 240 MHz
+  ESP-IDF Version: v5.5.6
+  EFuse MAC: <MAC>
+  Reset Reason: Reboot request from api
+  Wakeup Cause: undefined
+[2026-11-22 11:11:29] [D][debug:280]:   Framework: ESP-IDF
+[2026-11-22 11:11:29] [C][debug:163]: Partition table:
+  Name         Type Subtype  Address    Size      
+[2026-11-22 11:11:29] [C][debug:170]:   otadata      1    0        0x00009000 0x00002000
+[2026-11-22 11:11:29] [C][debug:170]:   phy_init     1    1        0x0000B000 0x00001000
+[2026-11-22 11:11:29] [C][debug:170]:   app0         0    16       0x00010000 0x001C0000
+[2026-11-22 11:11:29] [C][debug:170]:   app1         0    17       0x001D0000 0x001C0000
+[2026-11-22 11:11:29] [C][debug:170]:   nvs          1    2        0x00390000 0x00070000
+[2026-11-22 11:11:29] [C][quietcool:162]: QuietCool confirmation controller
+[2026-11-22 11:11:33] [STATE] Heap Free = 240964.0
+[2026-11-22 11:11:34] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 11:11:34] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 11:11:35] [STATE] Uptime = 1564.188
+[2026-11-22 11:11:44] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 11:11:44] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-22 11:11:54] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 11:11:54] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 11:12:03] [STATE] Heap Free = 240968.0
+[2026-11-22 11:12:04] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 11:12:04] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 11:12:14] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 11:12:14] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 11:12:24] [I][qc.rx:200]: RX #314: 158 bytes rssi=-109.5 dBm snr=0.0 dB: <IP>.C4.AB.59.B9.67.72.D6.BA.3E.DB.DB.EC.07.01.34.1C.C4.88.19.E6.A4.89.40.BF.94.CC.<IP>.76.46.1A.AF.F1.14.34.9B.06.99.B9.42.38.71.E1.E2.21.0E.C3.BC.B5.81.40.CE.A2.1A.2B.F8.19.F2.D9.6D.1A.BB.AE.6A.F1.A9.4F.2B.D8.ED.50.E0.CD.CF.36.09.BD.8B.3F.AD.B8.B1.79.45.0B.EA.9B.07.04.FD.1F.45.0C.05.C2.65.E3.1F.44.A5.69.5B.47.75.66.C7.5D.65.FF.5A.26.BE.12.41.0A.3A.35.6C.CA.AA.0E.A6.BB.F7.9E.E1.89.F1.99.E0.11.17.86.BD.B0.2A.1F.72.F2.E8.D8.
+[2026-11-22 11:12:24] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 11:12:24] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 11:12:24] [STATE] Last RX RSSI = -109.5
+[2026-11-22 11:12:24] [STATE] Last RX Length = 158.0
+[2026-11-22 11:12:24] [STATE] RX Rejected Count = 9.0
+[2026-11-22 11:12:33] [STATE] Heap Free = 240876.0
+[2026-11-22 11:12:35] [STATE] WiFi Signal = -53.0
+[2026-11-22 11:12:35] [STATE] Uptime = 1624.188
+[2026-11-22 11:12:44] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 11:12:44] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-22 11:12:44] [I][qc.rx:200]: RX #315: 120 bytes rssi=-109.0 dBm snr=0.0 dB: 7D.E9.A5.27.5A.7A.B5.93.D3.35.D5.31.82.30.CB.BE.57.5B.44.FF.DA.0D.0A.B9.6E.7B.66.3D.25.9A.3A.1F.34.4C.1A.D7.43.0D.45.72.3F.41.AD.EA.D6.04.DE.B2.DE.89.5C.2A.B7.07.B2.7D.D2.F9.C9.B1.E8.FB.8C.38.08.88.D2.8C.30.B0.D5.21.08.57.A9.72.A8.<IP>.40.01.D4.9F.EE.87.5C.13.B9.24.27.84.9B.3A.06.1E.B4.BE.C6.61.BA.05.C6.77.D1.AB.F2.CF.42.BA.6A.1F.<IP>.5E.FE.9E (120)
+[2026-11-22 11:12:44] [STATE] Last RX RSSI = -109.0
+[2026-11-22 11:12:44] [STATE] Last RX Length = 120.0
+[2026-11-22 11:12:44] [STATE] RX Rejected Count = 10.0
+[2026-11-22 11:12:54] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 11:12:54] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 11:12:58] [I][qc.rx:200]: RX #316: 6 bytes rssi=-44.5 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:12:58] [I][qc.rx:200]: RX #317: 6 bytes rssi=-45.0 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:12:58] [STATE] Last RX RSSI = -45.0
+[2026-11-22 11:12:58] [STATE] Last RX Length = 6.0
+[2026-11-22 11:12:58] [STATE] Fan State Known = False
+[2026-11-22 11:12:58] [STATE] Timer State Known = False
+[2026-11-22 11:12:58] [STATE] Fan Confirmed Off = False
+[2026-11-22 11:12:58] [STATE] Timer Remaining = nan
+[2026-11-22 11:12:58] [STATE] Fan Evidence Source = unavailable
+[2026-11-22 11:12:58] [STATE] Last Confirmed Fan State = unknown
+[2026-11-22 11:12:58] [STATE] RX Valid Count = 243.0
+[2026-11-22 11:12:58] [I][qc.rx:200]: RX #318: 6 bytes rssi=-46.0 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:12:58] [STATE] Last RX RSSI = -46.0
+[2026-11-22 11:12:58] [STATE] Timer Remaining = nan
+[2026-11-22 11:12:58] [I][qc.rx:200]: RX #319: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:12:58] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:12:58] [STATE] Timer Remaining = nan
+[2026-11-22 11:12:58] [I][qc.rx:200]: RX #320: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:12:59] [STATE] Last RX RSSI = -69.5
+[2026-11-22 11:12:59] [STATE] Timer Remaining = nan
+[2026-11-22 11:12:59] [I][qc.rx:200]: RX #321: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:12:59] [STATE] Timer Remaining = nan
+[2026-11-22 11:12:59] [STATE] RX Valid Count = 248.0
+[2026-11-22 11:12:59] [I][qc.rx:200]: RX #322: 6 bytes rssi=-44.5 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:12:59] [I][qc.rx:200]: RX #323: 6 bytes rssi=-44.5 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:12:59] [STATE] Last RX RSSI = -44.5
+[2026-11-22 11:12:59] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:00] [I][qc.rx:200]: RX #324: 6 bytes rssi=-44.5 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:13:00] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:00] [I][qc.rx:200]: RX #325: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:13:00] [STATE] Last RX RSSI = -69.5
+[2026-11-22 11:13:00] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:00] [I][qc.rx:200]: RX #326: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:13:00] [STATE] RX Valid Count = 252.0
+[2026-11-22 11:13:00] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:13:00] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:00] [I][qc.rx:200]: RX #327: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:13:00] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:01] [STATE] RX Valid Count = 254.0
+[2026-11-22 11:13:03] [STATE] Heap Free = 240824.0
+[2026-11-22 11:13:03] [I][qc.rx:200]: RX #328: 6 bytes rssi=-48.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:13:03] [I][qc.rx:200]: RX #329: 6 bytes rssi=-47.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:13:03] [STATE] Last RX RSSI = -47.0
+[2026-11-22 11:13:03] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:03] [STATE] Last Valid RX Frame = 0x91
+[2026-11-22 11:13:03] [STATE] RX Valid Count = 255.0
+[2026-11-22 11:13:03] [I][qc.rx:200]: RX #330: 6 bytes rssi=-47.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:13:03] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:03] [I][qc.rx:200]: RX #331: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:13:03] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:13:03] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:03] [I][qc.rx:200]: RX #332: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:13:03] [STATE] Last RX RSSI = -68.5
+[2026-11-22 11:13:03] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:03] [I][qc.rx:200]: RX #333: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:13:04] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:04] [STATE] RX Valid Count = 260.0
+[2026-11-22 11:13:07] [STATE] TX Count = 31.0
+[2026-11-22 11:13:07] [I][qc.rx:200]: RX #334: 6 bytes rssi=-70.5 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:13:07] [STATE] Last RX RSSI = -70.5
+[2026-11-22 11:13:07] [STATE] RX Valid Count = 261.0
+[2026-11-22 11:13:07] [I][qc.rx:200]: RX #335: 6 bytes rssi=-70.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:13:07] [STATE] Last RX RSSI = -70.0
+[2026-11-22 11:13:07] [STATE] QuietCool Fan = True
+[2026-11-22 11:13:07] [STATE] Fan Timer = 1 hour
+[2026-11-22 11:13:07] [STATE] Fan State Known = True
+[2026-11-22 11:13:07] [STATE] Timer State Known = True
+[2026-11-22 11:13:07] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:07] [STATE] Fan Evidence Source = recovery_query
+[2026-11-22 11:13:07] [STATE] Last Confirmed Fan State = low 1h
+[2026-11-22 11:13:07] [I][qc.rx:200]: RX #336: 6 bytes rssi=-70.5 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:13:07] [STATE] Last RX RSSI = -70.5
+[2026-11-22 11:13:08] [STATE] RX Valid Count = 263.0
+[2026-11-22 11:13:14] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 11:13:14] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 11:13:34] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 11:13:34] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 11:13:35] [STATE] WiFi Signal = -51.0
+[2026-11-22 11:13:35] [STATE] Uptime = 1684.188
+[2026-11-22 11:13:44] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 11:13:44] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 11:13:55] [I][qc.rx:200]: RX #337: 6 bytes rssi=-43.0 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:13:56] [I][qc.rx:200]: RX #338: 6 bytes rssi=-43.0 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:13:56] [STATE] Last RX RSSI = -43.0
+[2026-11-22 11:13:56] [STATE] Fan State Known = False
+[2026-11-22 11:13:56] [STATE] Timer State Known = False
+[2026-11-22 11:13:56] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:56] [STATE] Fan Evidence Source = unavailable
+[2026-11-22 11:13:56] [STATE] Last Confirmed Fan State = unknown
+[2026-11-22 11:13:56] [STATE] RX Valid Count = 264.0
+[2026-11-22 11:13:56] [I][qc.rx:200]: RX #339: 6 bytes rssi=-43.5 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:13:56] [STATE] Last RX RSSI = -43.5
+[2026-11-22 11:13:56] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:56] [I][qc.rx:200]: RX #340: 6 bytes rssi=-70.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:13:56] [STATE] Last RX RSSI = -70.0
+[2026-11-22 11:13:56] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:56] [I][qc.rx:200]: RX #341: 6 bytes rssi=-70.5 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:13:56] [STATE] Last RX RSSI = -70.5
+[2026-11-22 11:13:56] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:56] [I][qc.rx:200]: RX #342: 6 bytes rssi=-70.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:13:56] [STATE] Last RX RSSI = -70.0
+[2026-11-22 11:13:56] [STATE] Timer Remaining = nan
+[2026-11-22 11:13:57] [STATE] RX Valid Count = 269.0
+[2026-11-22 11:13:59] [STATE] TX Count = 32.0
+[2026-11-22 11:14:00] [I][qc.rx:200]: RX #343: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 11:14:00] [STATE] Last RX RSSI = -69.5
+[2026-11-22 11:14:00] [STATE] Last Valid RX Frame = 0xB1
+[2026-11-22 11:14:00] [STATE] RX Valid Count = 270.0
+[2026-11-22 11:14:00] [I][qc.rx:200]: RX #344: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 11:14:00] [STATE] Last RX RSSI = -68.5
+[2026-11-22 11:14:00] [STATE] Fan State Known = True
+[2026-11-22 11:14:00] [STATE] Timer State Known = True
+[2026-11-22 11:14:00] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:00] [STATE] Fan Evidence Source = recovery_query
+[2026-11-22 11:14:00] [STATE] Last Confirmed Fan State = high 1h
+[2026-11-22 11:14:00] [I][qc.rx:200]: RX #345: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 11:14:00] [STATE] Last RX RSSI = -69.5
+[2026-11-22 11:14:01] [STATE] RX Valid Count = 272.0
+[2026-11-22 11:14:03] [STATE] Heap Free = 240800.0
+[2026-11-22 11:14:14] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 11:14:14] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 11:14:24] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 11:14:24] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 11:14:31] [D][preferences:255]: Writing 1 items: 0 cached, 1 written, 0 failed
+[2026-11-22 11:14:33] [STATE] Heap Free = 240824.0
+[2026-11-22 11:14:34] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 11:14:34] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-22 11:14:35] [STATE] WiFi Signal = -54.0
+[2026-11-22 11:14:35] [STATE] Uptime = 1744.188
+[2026-11-22 11:14:38] [I][qc.rx:200]: RX #346: 6 bytes rssi=-44.0 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:14:38] [I][qc.rx:200]: RX #347: 6 bytes rssi=-44.0 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:14:39] [STATE] Last RX RSSI = -44.0
+[2026-11-22 11:14:39] [STATE] Fan State Known = False
+[2026-11-22 11:14:39] [STATE] Timer State Known = False
+[2026-11-22 11:14:39] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:39] [STATE] Fan Evidence Source = unavailable
+[2026-11-22 11:14:39] [STATE] Last Confirmed Fan State = unknown
+[2026-11-22 11:14:39] [STATE] RX Valid Count = 273.0
+[2026-11-22 11:14:39] [I][qc.rx:200]: RX #348: 6 bytes rssi=-44.5 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:14:39] [STATE] Last RX RSSI = -44.5
+[2026-11-22 11:14:39] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:40] [STATE] RX Valid Count = 275.0
+[2026-11-22 11:14:40] [I][qc.rx:200]: RX #349: 6 bytes rssi=-46.0 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:14:40] [I][qc.rx:200]: RX #350: 6 bytes rssi=-44.5 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:14:40] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:40] [I][qc.rx:200]: RX #351: 6 bytes rssi=-45.5 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 11:14:40] [STATE] Last RX RSSI = -45.5
+[2026-11-22 11:14:40] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:40] [I][qc.rx:200]: RX #352: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 11:14:40] [STATE] Last RX RSSI = -67.5
+[2026-11-22 11:14:40] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:40] [I][qc.rx:200]: RX #353: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 11:14:41] [STATE] RX Valid Count = 279.0
+[2026-11-22 11:14:41] [STATE] Last RX RSSI = -68.0
+[2026-11-22 11:14:41] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:41] [I][qc.rx:200]: RX #354: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 11:14:41] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:42] [STATE] RX Valid Count = 281.0
+[2026-11-22 11:14:44] [STATE] TX Count = 33.0
+[2026-11-22 11:14:44] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 11:14:44] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 11:14:44] [I][qc.rx:200]: RX #355: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 11:14:44] [STATE] RX Valid Count = 282.0
+[2026-11-22 11:14:44] [I][qc.rx:200]: RX #356: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 11:14:44] [STATE] Fan State Known = True
+[2026-11-22 11:14:44] [STATE] Timer State Known = True
+[2026-11-22 11:14:44] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:44] [STATE] Fan Evidence Source = recovery_query
+[2026-11-22 11:14:44] [STATE] Last Confirmed Fan State = high 1h
+[2026-11-22 11:14:44] [I][qc.rx:200]: RX #357: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 11:14:45] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:14:45] [STATE] RX Valid Count = 284.0
+[2026-11-22 11:14:45] [I][qc.rx:200]: RX #358: 6 bytes rssi=-43.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 11:14:45] [I][qc.rx:200]: RX #359: 6 bytes rssi=-44.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 11:14:46] [STATE] Last RX RSSI = -44.5
+[2026-11-22 11:14:46] [STATE] Fan State Known = False
+[2026-11-22 11:14:46] [STATE] Timer State Known = False
+[2026-11-22 11:14:46] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:46] [STATE] Fan Evidence Source = unavailable
+[2026-11-22 11:14:46] [STATE] Last Confirmed Fan State = unknown
+[2026-11-22 11:14:46] [STATE] Last Valid RX Frame = 0xB0
+[2026-11-22 11:14:46] [I][qc.rx:200]: RX #360: 6 bytes rssi=-43.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 11:14:46] [STATE] Last RX RSSI = -43.5
+[2026-11-22 11:14:46] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:46] [I][qc.rx:200]: RX #361: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 11:14:46] [STATE] Last RX RSSI = -68.0
+[2026-11-22 11:14:46] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:46] [I][qc.rx:200]: RX #362: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 11:14:46] [STATE] Last RX RSSI = -68.5
+[2026-11-22 11:14:46] [STATE] RX Valid Count = 289.0
+[2026-11-22 11:14:46] [I][qc.rx:200]: RX #363: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 11:14:46] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:14:47] [STATE] RX Valid Count = 290.0
+[2026-11-22 11:14:48] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:48] [I][qc.rx:200]: RX #364: 131 bytes rssi=-112.0 dBm snr=0.0 dB: 5C.B5.E2.C3.CF.B4.4B.16.87.5B.91.5C.E1.5D.B8.5A.C0.96.E8.9E.DB.00.19.4E.49.68.F9.13.CD.7B.1C.B0.C9.56.6B.DE.E8.70.E7.D7.C8.15.C7.7C.E5.49.85.9C.2A.44.D9.5F.DE.5D.C8.9B.C1.EC.7C.08.35.7A.AA.4C.28.2A.8F.EE.6C.EF.09.A0.E4.D8.4F.6A.6B.C9.79.B6.CF.7A.AF.18.DC.B2.4A.B3.90.7B.93.14.19.5E.DB.4A.81.A9.DB.58.D7.5B.9A.3E.41.8C.02.B1.E5.7F.FC.6A.FF.4B.E8.AB.A9.5F.30.C0.3C.82.54.C3.93.D2.FD.FB.9B.57.E7 (131)
+[2026-11-22 11:14:48] [STATE] Last RX RSSI = -112.0
+[2026-11-22 11:14:48] [STATE] Last RX Length = 131.0
+[2026-11-22 11:14:48] [STATE] RX Rejected Count = 11.0
+[2026-11-22 11:14:50] [STATE] TX Count = 34.0
+[2026-11-22 11:14:50] [I][qc.rx:200]: RX #365: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 11:14:50] [STATE] Last RX RSSI = -69.5
+[2026-11-22 11:14:50] [STATE] Last RX Length = 6.0
+[2026-11-22 11:14:50] [STATE] RX Valid Count = 291.0
+[2026-11-22 11:14:50] [I][qc.rx:200]: RX #366: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 11:14:50] [STATE] QuietCool Fan = False
+[2026-11-22 11:14:50] [STATE] Fan Timer = None
+[2026-11-22 11:14:50] [STATE] Fan State Known = True
+[2026-11-22 11:14:50] [STATE] Timer State Known = True
+[2026-11-22 11:14:50] [STATE] Fan Confirmed Off = True
+[2026-11-22 11:14:50] [STATE] Timer Remaining = nan
+[2026-11-22 11:14:50] [STATE] Fan Evidence Source = recovery_query
+[2026-11-22 11:14:50] [STATE] Last Confirmed Fan State = off
+[2026-11-22 11:14:50] [I][qc.rx:200]: RX #367: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 11:14:50] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:14:51] [STATE] RX Valid Count = 293.0
+[2026-11-22 11:14:56] [I][qc.rx:200]: RX #368: 241 bytes rssi=-110.0 dBm snr=0.0 dB: 56.07.55.A0.4B.E9.54.FB.39.CF.53.E8.4C.D8.6A.6A.0F.D7.9A.AB.35.6E.9E.57.2E.11.EA.6A.87.A5.79.F1.37.4F.EF.AF.4F.56.76.8A.3F.A6.CA.E1.8E.82.87.41.9E.75.FF.B7.69.4C.79.CA.F5.2E.84.5F.30.12.E1.<IP>.99.F0.8B.B1.3E.16.FB.E5.D1.93.46.5A.ED.74.4D.77.D7.71.51.43.C2.D5.99.CA.ED.D5.E0.54.72.E5.FA.1A.3A.B5.8D.D0.9D.D5.A9.5A.3A.68.8B.5E.09.45.95.E8.9F.E8.94.09.BB.26.47.CF.CA.FD.F6.DA.DB.64.4B.32.BD.0A.47.9D.C8.6C.96.15.2F.7B.40.02.D2.38.44.B3.
+[2026-11-22 11:14:56] [STATE] Last RX RSSI = -110.0
+[2026-11-22 11:14:56] [STATE] Last RX Length = 241.0
+[2026-11-22 11:14:56] [STATE] RX Rejected Count = 12.0
+[2026-11-22 11:15:03] [STATE] Heap Free = 240808.0
+[2026-11-22 11:15:04] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 11:15:04] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 11:15:24] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 11:15:24] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002

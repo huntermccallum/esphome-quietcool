@@ -1,0 +1,560 @@
+[2026-11-22 10:36:57] ### connected to quietcool-lora-v3 (ESPHome 2026.11.0, compiled 2026-11-22 10:21:20 -0700)
+[2026-11-22 10:36:57] [I][app:163]: ESPHome version 2026.11.0 compiled on 2026-11-22 10:21:20 -0700
+[2026-11-22 10:36:57] [I][app:170]: ESP32 Chip: ESP32-S3 rev0.2, 2 core(s)
+[2026-11-22 10:36:57] [W][app:188]: Set flash_chip: generic under esp32 > framework > advanced to save IRAM
+[2026-11-22 10:36:57] [C][logger:329]: Logger:
+  Max Level: DEBUG
+  Initial Level: DEBUG
+[2026-11-22 10:36:57] [C][logger:336]:   Log Baud Rate: 115200
+  Hardware UART: USB_SERIAL_JTAG
+[2026-11-22 10:36:57] [C][logger:345]:   Task Log Buffer Size: 768 bytes
+[2026-11-22 10:36:57] [C][i2c:174]: I2C Bus:
+[2026-11-22 10:36:57] [C][i2c:175]:   SDA Pin: GPIO17
+  SCL Pin: GPIO18
+  Frequency: 400000 Hz
+[2026-11-22 10:36:57] [C][i2c:191]:   Recovery: bus successfully recovered
+[2026-11-22 10:36:57] [C][i2c:027]: Results from bus scan:
+[2026-11-22 10:36:57] [C][i2c:029]: Found no devices
+[2026-11-22 10:36:57] [C][spi:076]: SPI bus:
+[2026-11-22 10:36:57] [C][spi:137]:   CLK Pin: GPIO9
+[2026-11-22 10:36:57] [C][spi:137]:   SDI Pin: GPIO11
+[2026-11-22 10:36:57] [C][spi:137]:   SDO Pin: GPIO10
+[2026-11-22 10:36:57] [C][spi:087]:   Using HW SPI: SPI2_HOST
+[2026-11-22 10:36:57] [C][switch.gpio:105]: GPIO Switch 'vext_power'
+  Restore Mode: always ON
+[2026-11-22 10:36:57] [C][switch.gpio:137]:   Pin: GPIO36
+[2026-11-22 10:36:57] [C][switch.gpio:105]: GPIO Switch 'Test: VBAT ADC Enable (GPIO37)'
+  Restore Mode: always ON
+[2026-11-22 10:36:57] [C][switch.gpio:137]:   Pin: GPIO37
+[2026-11-22 10:36:57] [STATE] Fan State Known = False
+[2026-11-22 10:36:57] [STATE] Timer State Known = False
+[2026-11-22 10:36:57] [STATE] Fan Timer Remaining Known = False
+[2026-11-22 10:36:57] [STATE] Fan Confirmed Off = False
+[2026-11-22 10:36:57] [STATE] Controller Fault = False
+[2026-11-22 10:36:57] [STATE] Test: PRG Button (GPIO0) = False
+[2026-11-22 10:36:57] [STATE] QuietCool Fan = False
+[2026-11-22 10:36:57] [STATE] Test: Onboard LED (GPIO35, non-inverted) = False
+[2026-11-22 10:36:57] [STATE] Timer Remaining = nan
+[2026-11-22 10:36:57] [STATE] TX Count = 0.0
+[2026-11-22 10:36:57] [STATE] RX Valid Count = 0.0
+[2026-11-22 10:36:57] [STATE] RX Rejected Count = 0.0
+[2026-11-22 10:36:57] [STATE] Last RX RSSI = -110.5
+[2026-11-22 10:36:57] [STATE] Last RX Length = 195.0
+[2026-11-22 10:36:57] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 10:36:57] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 10:36:57] [STATE] Loop Stack Min Free = 12302.0
+[2026-11-22 10:36:57] [STATE] Heap Free = 243412.0
+[2026-11-22 10:36:57] [STATE] WiFi Signal = -57.0
+[2026-11-22 10:36:57] [STATE] Uptime = 122.582
+[2026-11-22 10:36:57] [STATE] Test: VBAT ADC Enable (GPIO37) = True
+[2026-11-22 10:36:57] [STATE] Command Confirmation Status = idle
+[2026-11-22 10:36:57] [STATE] Fan Evidence Source = unavailable
+[2026-11-22 10:36:57] [STATE] Last TX Command = <unknown>
+[2026-11-22 10:36:57] [STATE] Last Valid RX Frame = <unknown>
+[2026-11-22 10:36:57] [STATE] Last Confirmed Fan State = unknown
+[2026-11-22 10:36:57] [STATE] Fan Speed Capability = unknown
+[2026-11-22 10:36:57] [STATE] Remote Sender ID = unknown
+[2026-11-22 10:36:57] [STATE] Reset Reason = power-on event
+[2026-11-22 10:36:57] [STATE] ESPHome Version = 2026.11.0 (config hash 0xdcec3636, built 2026-11-22 10:21:20 -0700)
+[2026-11-22 10:36:57] [STATE] Fan Timer = <unknown>
+[2026-11-22 10:36:57] [C][gpio.output:009]: Binary Output:
+[2026-11-22 10:36:57] [C][gpio.output:137]:   Pin: GPIO35
+[2026-11-22 10:36:57] [C][gpio.binary_sensor:191]: GPIO Binary Sensor 'Test: PRG Button (GPIO0)'
+[2026-11-22 10:36:57] [C][gpio.binary_sensor:137]:   Pin: GPIO0
+[2026-11-22 10:36:57] [C][gpio.binary_sensor:068]:   Mode: interrupt
+[2026-11-22 10:36:57] [C][gpio.binary_sensor:070]:   Interrupt Type: ANY_EDGE
+[2026-11-22 10:36:57] [C][template.sensor:017]: Template Sensor 'Last RX RSSI'
+  State Class: 'measurement'
+  Unit of Measurement: 'dBm'
+  Accuracy Decimals: 1
+[2026-11-22 10:36:57] [C][template.sensor:207]:   Device Class: 'signal_strength'
+[2026-11-22 10:36:57] [C][template.sensor:367]:   Update Interval: 60.000s
+[2026-11-22 10:36:57] [C][template.sensor:017]: Template Sensor 'Last RX Length'
+  State Class: ''
+  Unit of Measurement: 'bytes'
+  Accuracy Decimals: 0
+[2026-11-22 10:36:57] [C][template.sensor:367]:   Update Interval: 60.000s
+[2026-11-22 10:36:57] [C][template.sensor:017]: Template Sensor 'Loop Stack Min Free'
+  State Class: ''
+  Unit of Measurement: 'B'
+  Accuracy Decimals: 0
+[2026-11-22 10:36:57] [C][template.sensor:367]:   Update Interval: 30.000s
+[2026-11-22 10:36:58] [C][uptime.sensor:017]: Uptime Sensor 'Uptime'
+  State Class: 'total_increasing'
+  Unit of Measurement: 's'
+  Accuracy Decimals: 0
+[2026-11-22 10:36:58] [C][uptime.sensor:207]:   Device Class: 'duration'
+[2026-11-22 10:36:58] [C][uptime.sensor:199]:   Icon: 'mdi:timer-outline'
+[2026-11-22 10:36:58] [C][uptime.sensor:019]:   Type: Seconds
+[2026-11-22 10:36:58] [C][light:098]: Light 'Test: Onboard LED (GPIO35, non-inverted)'
+[2026-11-22 10:36:58] [C][quietcool.fan:191]: QuietCool Confirmed Fan 'QuietCool Fan'
+[2026-11-22 10:36:58] [C][quietcool.fan:296]:   Speed: YES
+  Speed count: 3
+[2026-11-22 10:36:58] [C][quietcool.timer:012]: QuietCool Fan Timer
+[2026-11-22 10:36:58] [C][quietcool.timer:013]:   Every option transmits: a duration starts the fan (at LOW if stopped); None means run continuously and will restart a fan whose timer expired.
+[2026-11-22 10:36:58] [C][version.text_sensor:191]: Version Text Sensor 'ESPHome Version'
+[2026-11-22 10:36:58] [C][version.text_sensor:199]:   Icon: 'mdi:new-box'
+[2026-11-22 10:36:58] [C][wifi_info:191]: IP Address 'IP Address'
+[2026-11-22 10:36:58] [C][adc:017]: ADC Sensor 'Test: VBAT ADC Raw (GPIO1)'
+  State Class: 'measurement'
+  Unit of Measurement: 'V'
+  Accuracy Decimals: 3
+[2026-11-22 10:36:58] [C][adc:207]:   Device Class: 'voltage'
+[2026-11-22 10:36:58] [C][adc:137]:   Pin: GPIO1
+[2026-11-22 10:36:58] [C][adc:131]:   Channel:       0
+  Unit:          ADC1
+  Attenuation:   12 dB
+  Samples:       1
+  Sampling mode: average
+  Setup Status:
+    Handle Init:  OK
+    Config:       OK
+    Calibration:  OK
+    Overall Init: OK
+[2026-11-22 10:36:58] [C][adc:367]:   Update Interval: 10.000s
+[2026-11-22 10:36:58] [C][quietcool.button:191]: QuietCool Controller Button 'Refresh Fan State'
+[2026-11-22 10:36:58] [C][quietcool.button:191]: QuietCool Controller Button 'Learn Remote ID'
+[2026-11-22 10:36:58] [C][quietcool.button:191]: QuietCool Controller Button 'Forget Remote ID'
+[2026-11-22 10:36:58] [C][ssd1306_i2c:020]: I2C SSD1306
+  Rotations: 0 °
+  Dimensions: 128px x 64px
+[2026-11-22 10:36:58] [C][ssd1306_i2c:021]:   Model: SSD1306 128x64
+  External VCC: NO
+  Flip X: YES
+  Flip Y: YES
+  Offset X: 0
+  Offset Y: 0
+  Inverted Color: NO
+[2026-11-22 10:36:58] [C][ssd1306_i2c:031]:   Address: 0x3C
+[2026-11-22 10:36:58] [C][ssd1306_i2c:137]:   Reset Pin: GPIO21
+[2026-11-22 10:36:58] [C][ssd1306_i2c:367]:   Update Interval: 1.000s
+[2026-11-22 10:36:58] [C][sx126x:507]: SX126x:
+[2026-11-22 10:36:58] [C][sx126x:137]:   CS Pin: GPIO8
+[2026-11-22 10:36:58] [C][sx126x:137]:   BUSY Pin: GPIO13
+[2026-11-22 10:36:58] [C][sx126x:137]:   RST Pin: GPIO12
+[2026-11-22 10:36:58] [C][sx126x:137]:   DIO1 Pin: GPIO14
+[2026-11-22 10:36:58] [C][sx126x:512]:   HW Version: SX1261 V2D 2D02
+  Frequency: 433920000 Hz
+  Bandwidth: 58600 Hz
+  PA Power: 17 dBm
+  PA Ramp: 40 us
+  Payload Length: 0
+  CRC Enable: FALSE
+  Rx Start: TRUE
+[2026-11-22 10:36:58] [C][sx126x:535]:   Modulation: FSK
+  Deviation: 10000 Hz
+  Shaping: NONE
+  Preamble Size: 8
+  Preamble Detect: 0
+  Bitrate: 2400b/s
+[2026-11-22 10:36:58] [C][sx126x:561]:   Sync Value: 0x2dd4
+[2026-11-22 10:36:58] [C][sx126x:564]:   Whitening Enable: FALSE
+[2026-11-22 10:36:58] [C][network:050]: Network:
+  TCP send buffer: 5760 bytes
+[2026-11-22 10:36:58] [C][captive_portal:134]: Captive Portal:
+[2026-11-22 10:36:58] [C][wifi:1771]: WiFi:
+  Local MAC: <MAC>
+  Connected: YES
+[2026-11-22 10:36:58] [C][wifi:1461]:   IP Address: <IP>
+[2026-11-22 10:36:58] [C][wifi:1472]:   SSID: '<SSID>'
+  BSSID: <MAC>
+  Hostname: 'quietcool-lora-v3'
+  Signal strength: -57 dB ▂▄▆█
+  Channel: 11
+  Subnet: 255.255.255.0
+  Gateway: <IP>
+  DNS1: <IP>
+  DNS2: 0.0.0.0
+[2026-11-22 10:36:58] [C][esphome.ota:132]: Over-The-Air updates:
+  Address: quietcool-lora-v3.local:3232
+  Version: 2
+  Encryption: required
+[2026-11-22 10:36:58] [C][safe_mode:058]: Safe Mode:
+  Successful after: 60s
+  Invoke after: 10 attempts
+  Duration: 300s
+[2026-11-22 10:36:58] [C][safe_mode:075]:   Bootloader rollback: support unknown
+[2026-11-22 10:36:58] [C][web_server.ota:245]: Web Server OTA
+[2026-11-22 10:36:58] [C][api:374]: Server:
+  Address: quietcool-lora-v3.local:6053
+  Listen backlog: 4
+  Max connections: 5
+[2026-11-22 10:36:58] [C][api:381]:   Noise encryption: YES
+[2026-11-22 10:36:58] [C][wifi_signal.sensor:017]: WiFi Signal 'WiFi Signal'
+  State Class: 'measurement'
+  Unit of Measurement: 'dBm'
+  Accuracy Decimals: 0
+[2026-11-22 10:36:58] [C][wifi_signal.sensor:207]:   Device Class: 'signal_strength'
+[2026-11-22 10:36:58] [C][mdns:336]: mDNS:
+  Hostname: quietcool-lora-v3
+[2026-11-22 10:36:58] [C][debug:017]: Debug component:
+[2026-11-22 10:36:58] [C][debug:017]:   Free space on heap 'Heap Free'
+    State Class: 'measurement'
+    Unit of Measurement: 'B'
+    Accuracy Decimals: 0
+[2026-11-22 10:36:58] [C][debug:199]:     Icon: 'mdi:counter'
+[2026-11-22 10:36:58] [D][debug:031]: ESPHome version 2026.11.0
+[2026-11-22 10:36:58] [D][debug:035]: Free Heap Size: 230412 bytes
+[2026-11-22 10:36:58] [D][debug:044]: Uptime: 0d 00h 02m 25s
+[2026-11-22 10:36:58] [D][debug:260]: ESP32 debug info:
+  Chip: ESP32-S3
+  Cores: 2
+  Revision: 2
+  CPU Frequency: 240 MHz
+  ESP-IDF Version: v5.5.6
+  EFuse MAC: <MAC>
+  Reset Reason: power-on event
+  Wakeup Cause: undefined
+[2026-11-22 10:36:58] [D][debug:280]:   Framework: ESP-IDF
+[2026-11-22 10:36:58] [C][debug:163]: Partition table:
+  Name         Type Subtype  Address    Size      
+[2026-11-22 10:36:58] [C][debug:170]:   otadata      1    0        0x00009000 0x00002000
+[2026-11-22 10:36:58] [C][debug:170]:   phy_init     1    1        0x0000B000 0x00001000
+[2026-11-22 10:36:58] [C][debug:170]:   app0         0    16       0x00010000 0x001C0000
+[2026-11-22 10:36:58] [C][debug:170]:   app1         0    17       0x001D0000 0x001C0000
+[2026-11-22 10:36:58] [C][debug:170]:   nvs          1    2        0x00390000 0x00070000
+[2026-11-22 10:36:58] [C][quietcool:162]: QuietCool confirmation controller
+[2026-11-22 10:37:07] [STATE] Heap Free = 242588.0
+[2026-11-22 10:37:12] [I][qc.rx:200]: RX #2: 160 bytes rssi=-111.5 dBm snr=0.0 dB: 64.D7.4B.FE.35.2B.FF.DB.99.F2.39.2C.66.0E.9E.5B.0D.8A.41.0F.28.B0.C5.1E.3F.C7.F0.FE.89.D0.A5.B1.74.AC.F4.0B.89.6F.D7.21.93.F9.1A.97.E0.AE.02.F4.E8.FD.BB.FE.7F.21.08.AF.AD.FC.98.40.8C.64.ED.F6.27.3F.2C.C0.97.7D.FB.C6.4C.5D.87.B7.49.9D.BF.CC.E3.D7.DF.15.03.E7.15.54.91.CE.92.74.C3.F3.E5.A4.98.F0.CA.4C.FB.5B.B2.E7.49.D4.8D.98.B2.4B.B7.D9.CF.7C.1A.B5.BF.CC.0A.DA.C9.6D.B3.31.C3.5B.19.EC.47.B2.BB.03.EA.84.DC.92.B1.03.A6.22.9A.DA.3F.67.2E.35.05.6E
+[2026-11-22 10:37:12] [STATE] Last RX RSSI = -111.5
+[2026-11-22 10:37:12] [STATE] Last RX Length = 160.0
+[2026-11-22 10:37:14] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 10:37:14] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-22 10:37:14] [I][qc.rx:200]: RX #3: 161 bytes rssi=-111.5 dBm snr=0.0 dB: DE.0C.B9.F1.2E.8D.AA.B4.5B.C9.7E.F9.86.6F.48.C6.75.F0.73.6B.74.FA.E3.55.3C.1F.F6.D9.B8.D7.39.6B.1B.B4.D8.47.0B.5D.6A.B6.5F.31.CE.33.C3.58.FB.FB.F9.A7.70.CC.80.0D.18.DE.DA.91.3F.49.FD.A4.97.86.7C.CC.1D.A3.62.2B.5D.3A.DA.D6.8B.A9.FE.36.78.CA.C4.21.5C.B1.3D.99.CC.41.74.B0.5B.89.E1.B5.0A.CD.88.A7.22.55.07.E4.88.82.2F.33.6B.E5.7F.08.50.A5.DD.18.63.BC.F9.8E.FF.7F.4F.75.58.09.0E.07.BC.BE.06.74.5B.E2.F1.2A.A0.5C.40.94.0D.ED.67.E9.8F.7A.6B.89.35.B7
+[2026-11-22 10:37:14] [STATE] Last RX Length = 161.0
+[2026-11-22 10:37:17] [I][qc.rx:200]: RX #4: 6 bytes rssi=-76.0 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 10:37:17] [I][qc.rx:200]: RX #5: 6 bytes rssi=-77.5 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 10:37:17] [STATE] Last RX RSSI = -77.5
+[2026-11-22 10:37:17] [STATE] Last RX Length = 6.0
+[2026-11-22 10:37:17] [I][qc.rx:200]: RX #6: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:37:17] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:37:17] [I][qc.rx:200]: RX #7: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:37:17] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:37:17] [I][qc.rx:200]: RX #8: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:37:18] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:37:22] [I][qc.rx:200]: RX #9: 6 bytes rssi=-72.5 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:37:22] [I][qc.rx:200]: RX #10: 6 bytes rssi=-73.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:37:22] [STATE] Last RX RSSI = -73.0
+[2026-11-22 10:37:22] [I][qc.rx:200]: RX #11: 6 bytes rssi=-72.5 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:37:22] [STATE] Last RX RSSI = -72.5
+[2026-11-22 10:37:23] [I][qc.rx:200]: RX #12: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:37:23] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:37:23] [I][qc.rx:200]: RX #13: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:37:23] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:37:23] [I][qc.rx:200]: RX #14: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:37:24] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 10:37:24] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 10:37:30] [I][qc.rx:200]: RX #15: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.11.11 (6)
+[2026-11-22 10:37:30] [I][qc.rx:200]: RX #16: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.11.11 (6)
+[2026-11-22 10:37:30] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:37:30] [I][qc.rx:200]: RX #17: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.11.11 (6)
+[2026-11-22 10:37:30] [STATE] Last RX RSSI = -68.5
+[2026-11-22 10:37:31] [I][qc.rx:200]: RX #18: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 10:37:31] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:37:31] [I][qc.rx:200]: RX #19: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 10:37:31] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:37:31] [I][qc.rx:200]: RX #20: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 10:37:31] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:37:34] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 10:37:34] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 10:37:35] [STATE] Uptime = 182.582
+[2026-11-22 10:37:37] [STATE] Heap Free = 242624.0
+[2026-11-22 10:37:38] [I][qc.rx:200]: RX #21: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.31.31 (6)
+[2026-11-22 10:37:38] [I][qc.rx:200]: RX #22: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.31.31 (6)
+[2026-11-22 10:37:38] [STATE] Last RX RSSI = -68.5
+[2026-11-22 10:37:38] [I][qc.rx:200]: RX #23: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.31.31 (6)
+[2026-11-22 10:37:39] [I][qc.rx:200]: RX #24: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:37:39] [I][qc.rx:200]: RX #25: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:37:39] [I][qc.rx:200]: RX #26: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:37:39] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:37:45] [I][qc.rx:200]: RX #27: 6 bytes rssi=-66.5 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:37:45] [I][qc.rx:200]: RX #28: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:37:45] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:37:45] [I][qc.rx:200]: RX #29: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:37:45] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:37:46] [I][qc.rx:200]: RX #30: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:37:46] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:37:46] [I][qc.rx:200]: RX #31: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:37:46] [I][qc.rx:200]: RX #32: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:37:51] [I][qc.rx:200]: RX #33: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:37:51] [I][qc.rx:200]: RX #34: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:37:51] [STATE] Last RX RSSI = -69.5
+[2026-11-22 10:37:51] [I][qc.rx:200]: RX #35: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:37:51] [STATE] Last RX RSSI = -69.0
+[2026-11-22 10:37:52] [I][qc.rx:200]: RX #36: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.34.34 (6)
+[2026-11-22 10:37:52] [STATE] Last RX RSSI = -69.5
+[2026-11-22 10:37:52] [I][qc.rx:200]: RX #37: 6 bytes rssi=-70.0 dBm snr=0.0 dB: CB.00.E0.C6.34.34 (6)
+[2026-11-22 10:37:52] [STATE] Last RX RSSI = -70.0
+[2026-11-22 10:37:53] [I][qc.rx:200]: RX #38: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:37:53] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:37:53] [I][qc.rx:200]: RX #39: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:37:53] [STATE] Last RX RSSI = -68.5
+[2026-11-22 10:37:53] [I][qc.rx:200]: RX #40: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:37:53] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:37:54] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 10:37:54] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 10:37:57] [I][qc.rx:200]: RX #41: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:37:57] [I][qc.rx:200]: RX #42: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:37:57] [STATE] Last RX RSSI = -69.0
+[2026-11-22 10:37:57] [I][qc.rx:200]: RX #43: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:37:57] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:37:57] [I][qc.rx:200]: RX #44: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:37:58] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:37:58] [I][qc.rx:200]: RX #45: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:37:58] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:37:58] [I][qc.rx:200]: RX #46: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:38:02] [I][qc.rx:200]: RX #47: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:38:02] [I][qc.rx:200]: RX #48: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:38:02] [STATE] Last RX RSSI = -69.5
+[2026-11-22 10:38:02] [I][qc.rx:200]: RX #49: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:38:03] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:38:03] [I][qc.rx:200]: RX #50: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:38:03] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:38:03] [I][qc.rx:200]: RX #51: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:38:03] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:38:07] [I][qc.rx:200]: RX #52: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:38:07] [I][qc.rx:200]: RX #53: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:38:07] [STATE] Last RX RSSI = -69.0
+[2026-11-22 10:38:07] [I][qc.rx:200]: RX #54: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:38:07] [STATE] Heap Free = 242560.0
+[2026-11-22 10:38:08] [I][qc.rx:200]: RX #55: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:38:08] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:38:08] [I][qc.rx:200]: RX #56: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:38:08] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:38:08] [I][qc.rx:200]: RX #57: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:38:12] [I][qc.rx:200]: RX #58: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:38:12] [I][qc.rx:200]: RX #59: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:38:12] [STATE] Last RX RSSI = -68.5
+[2026-11-22 10:38:12] [I][qc.rx:200]: RX #60: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:38:12] [I][qc.rx:200]: RX #61: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:38:12] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:38:12] [I][qc.rx:200]: RX #62: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:38:13] [I][qc.rx:200]: RX #63: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:38:14] [I][qc.rx:200]: RX #64: 122 bytes rssi=-110.0 dBm snr=0.0 dB: AD.EA.91.76.AA.E9.F6.4B.9C.91.F5.8B.EA.B2.97.FB.9A.99.5C.53.D6.EC.EB.64.14.34.5D.15.D4.9E.95.4E.74.A3.66.D4.4C.A2.4D.17.14.A2.2F.63.4A.F6.F9.99.F8.CE.EF.3E.1B.5D.<IP>.D8.3F.96.D4.06.1C.A7.FA.9B.F5.EA.1A.DC.5A.7E.70.D9.7C.52.53.D3.31.D5.B3.B5.8D.68.F9.52.7F.17.28.2A.6A.4C.7B.16.AF.1A.91.63.09.9F.E0.31.FF.4E.A9.49.F7.AE.75.B6.6B.15.3E.0A.BF.76.A6.EA.27.97.39 (122)
+[2026-11-22 10:38:14] [STATE] Last RX RSSI = -110.0
+[2026-11-22 10:38:14] [STATE] Last RX Length = 122.0
+[2026-11-22 10:38:14] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 10:38:14] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 10:38:22] [I][qc.rx:200]: RX #65: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:38:22] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:38:22] [STATE] Last RX Length = 6.0
+[2026-11-22 10:38:22] [I][qc.rx:200]: RX #66: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:38:22] [I][qc.rx:200]: RX #67: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:38:31] [I][qc.rx:200]: RX #68: 6 bytes rssi=-91.0 dBm snr=0.0 dB: CB.00.E0.C6.11.11 (6)
+[2026-11-22 10:38:32] [I][qc.rx:200]: RX #69: 6 bytes rssi=-87.5 dBm snr=0.0 dB: CB.00.E0.C6.11.11 (6)
+[2026-11-22 10:38:32] [STATE] Last RX RSSI = -87.5
+[2026-11-22 10:38:32] [I][qc.rx:200]: RX #70: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 10:38:32] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:38:32] [I][qc.rx:200]: RX #71: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 10:38:32] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:38:32] [I][qc.rx:200]: RX #72: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 10:38:33] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:38:34] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 10:38:34] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 10:38:35] [STATE] Uptime = 242.582
+[2026-11-22 10:38:37] [STATE] Heap Free = 242604.0
+[2026-11-22 10:38:42] [I][qc.rx:200]: RX #73: 6 bytes rssi=-88.0 dBm snr=0.0 dB: CB.00.E0.C6.31.31 (6)
+[2026-11-22 10:38:43] [STATE] Last RX RSSI = -88.0
+[2026-11-22 10:38:43] [I][qc.rx:200]: RX #74: 6 bytes rssi=-89.0 dBm snr=0.0 dB: CB.00.E0.C6.31.31 (6)
+[2026-11-22 10:38:43] [STATE] Last RX RSSI = -89.0
+[2026-11-22 10:38:43] [I][qc.rx:200]: RX #75: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:38:43] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:38:43] [I][qc.rx:200]: RX #76: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:38:43] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:38:43] [I][qc.rx:200]: RX #77: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:38:43] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:38:51] [I][qc.rx:200]: RX #78: 6 bytes rssi=-87.0 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:38:51] [I][qc.rx:200]: RX #79: 6 bytes rssi=-89.5 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:38:51] [STATE] Last RX RSSI = -89.5
+[2026-11-22 10:38:51] [I][qc.rx:200]: RX #80: 6 bytes rssi=-87.5 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:38:51] [STATE] Last RX RSSI = -87.5
+[2026-11-22 10:38:51] [I][qc.rx:200]: RX #81: 6 bytes rssi=-66.0 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:38:51] [STATE] Last RX RSSI = -66.0
+[2026-11-22 10:38:52] [I][qc.rx:200]: RX #82: 6 bytes rssi=-66.5 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:38:52] [STATE] Last RX RSSI = -66.5
+[2026-11-22 10:38:52] [I][qc.rx:200]: RX #83: 6 bytes rssi=-66.5 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:38:54] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 10:38:54] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 10:38:55] [I][qc.rx:200]: RX #84: 6 bytes rssi=-89.5 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:38:55] [STATE] Last RX RSSI = -89.5
+[2026-11-22 10:38:55] [I][qc.rx:200]: RX #85: 6 bytes rssi=-90.5 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:38:55] [STATE] Last RX RSSI = -90.5
+[2026-11-22 10:38:55] [I][qc.rx:200]: RX #86: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:38:56] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:38:56] [I][qc.rx:200]: RX #87: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:38:56] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:38:56] [I][qc.rx:200]: RX #88: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:38:56] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:38:59] [I][qc.rx:200]: RX #89: 6 bytes rssi=-89.5 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:38:59] [I][qc.rx:200]: RX #90: 6 bytes rssi=-89.0 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:38:59] [STATE] Last RX RSSI = -89.0
+[2026-11-22 10:39:00] [I][qc.rx:200]: RX #91: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:39:00] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:39:00] [I][qc.rx:200]: RX #92: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:39:00] [I][qc.rx:200]: RX #93: 6 bytes rssi=-66.5 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:39:00] [STATE] Last RX RSSI = -66.5
+[2026-11-22 10:39:03] [I][qc.rx:200]: RX #94: 6 bytes rssi=-89.5 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:39:03] [STATE] Last RX RSSI = -89.5
+[2026-11-22 10:39:04] [I][qc.rx:200]: RX #95: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:39:04] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:39:04] [I][qc.rx:200]: RX #96: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:39:04] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 10:39:04] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 10:39:04] [I][qc.rx:200]: RX #97: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:39:04] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:39:07] [I][qc.rx:200]: RX #98: 6 bytes rssi=-87.0 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:39:07] [STATE] Last RX RSSI = -87.0
+[2026-11-22 10:39:07] [STATE] Heap Free = 242512.0
+[2026-11-22 10:39:08] [I][qc.rx:200]: RX #99: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:39:08] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:39:08] [I][qc.rx:200]: RX #100: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:39:08] [I][qc.rx:200]: RX #101: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:39:08] [STATE] Last RX RSSI = -68.5
+[2026-11-22 10:39:11] [I][qc.rx:200]: RX #102: 6 bytes rssi=-74.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:39:12] [I][qc.rx:200]: RX #103: 6 bytes rssi=-72.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:39:12] [STATE] Last RX RSSI = -72.5
+[2026-11-22 10:39:12] [I][qc.rx:200]: RX #104: 6 bytes rssi=-72.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:39:12] [STATE] Last RX RSSI = -72.0
+[2026-11-22 10:39:12] [I][qc.rx:200]: RX #105: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:39:12] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:39:12] [I][qc.rx:200]: RX #106: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:39:12] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:39:12] [I][qc.rx:200]: RX #107: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:39:14] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 10:39:14] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 10:39:23] [I][qc.rx:200]: RX #108: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 10:39:23] [I][qc.rx:200]: RX #109: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 10:39:23] [STATE] Last RX RSSI = -69.5
+[2026-11-22 10:39:24] [I][qc.rx:200]: RX #110: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 10:39:24] [STATE] Last RX RSSI = -69.0
+[2026-11-22 10:39:24] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 10:39:24] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 10:39:25] [I][qc.rx:200]: RX #111: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 10:39:25] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:39:25] [I][qc.rx:200]: RX #112: 6 bytes rssi=-64.0 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 10:39:25] [I][qc.rx:200]: RX #113: 6 bytes rssi=-62.5 dBm snr=0.0 dB: CB.00.E0.C6.66.66 (6)
+[2026-11-22 10:39:25] [STATE] Last RX RSSI = -62.5
+[2026-11-22 10:39:25] [I][qc.rx:200]: RX #114: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:39:25] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:39:25] [I][qc.rx:200]: RX #115: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:39:26] [I][qc.rx:200]: RX #116: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:39:26] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:39:29] [I][qc.rx:200]: RX #117: 6 bytes rssi=-80.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:39:29] [I][qc.rx:200]: RX #118: 6 bytes rssi=-76.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:39:29] [STATE] Last RX RSSI = -76.0
+[2026-11-22 10:39:30] [I][qc.rx:200]: RX #119: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:39:30] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:39:30] [I][qc.rx:200]: RX #120: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:39:30] [I][qc.rx:200]: RX #121: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:39:30] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:39:33] [STATE] WiFi Signal = -56.0
+[2026-11-22 10:39:34] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 10:39:34] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-22 10:39:35] [STATE] Uptime = 302.582
+[2026-11-22 10:39:37] [D][wifi:2812]: Roam scan (-57 dBm, attempt 1/3)
+[2026-11-22 10:39:38] [STATE] Heap Free = 236880.0
+[2026-11-22 10:39:38] [I][qc.rx:200]: RX #122: 6 bytes rssi=-64.0 dBm snr=0.0 dB: CB.00.E0.C6.11.11 (6)
+[2026-11-22 10:39:38] [I][qc.rx:200]: RX #123: 6 bytes rssi=-64.0 dBm snr=0.0 dB: CB.00.E0.C6.11.11 (6)
+[2026-11-22 10:39:38] [STATE] Last RX RSSI = -64.0
+[2026-11-22 10:39:39] [I][qc.rx:200]: RX #124: 6 bytes rssi=-64.0 dBm snr=0.0 dB: CB.00.E0.C6.11.11 (6)
+[2026-11-22 10:39:39] [I][qc.rx:200]: RX #125: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 10:39:39] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:39:39] [I][qc.rx:200]: RX #126: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 10:39:39] [STATE] Last RX RSSI = -68.5
+[2026-11-22 10:39:39] [I][qc.rx:200]: RX #127: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 10:39:40] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:39:44] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 10:39:44] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 10:39:49] [I][qc.rx:200]: RX #128: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.31.31 (6)
+[2026-11-22 10:39:49] [I][qc.rx:200]: RX #129: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.31.31 (6)
+[2026-11-22 10:39:49] [STATE] Last RX RSSI = -65.5
+[2026-11-22 10:39:49] [I][qc.rx:200]: RX #130: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.31.31 (6)
+[2026-11-22 10:39:50] [I][qc.rx:200]: RX #131: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:39:50] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:39:50] [I][qc.rx:200]: RX #132: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:39:50] [I][qc.rx:200]: RX #133: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B1.B1 (6)
+[2026-11-22 10:39:54] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 10:39:54] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-22 10:39:57] [I][qc.rx:200]: RX #134: 6 bytes rssi=-65.0 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:39:57] [I][qc.rx:200]: RX #135: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:39:57] [STATE] Last RX RSSI = -65.5
+[2026-11-22 10:39:57] [I][qc.rx:200]: RX #136: 6 bytes rssi=-65.0 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:39:57] [STATE] Last RX RSSI = -65.0
+[2026-11-22 10:39:57] [I][qc.rx:200]: RX #137: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:39:57] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:39:57] [I][qc.rx:200]: RX #138: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:39:58] [I][qc.rx:200]: RX #139: 6 bytes rssi=-66.5 dBm snr=0.0 dB: CB.00.E0.C6.B2.B2 (6)
+[2026-11-22 10:39:58] [STATE] Last RX RSSI = -66.5
+[2026-11-22 10:40:02] [I][qc.rx:200]: RX #140: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:40:02] [I][qc.rx:200]: RX #141: 6 bytes rssi=-66.0 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:40:02] [STATE] Last RX RSSI = -66.0
+[2026-11-22 10:40:02] [I][qc.rx:200]: RX #142: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:40:02] [STATE] Last RX RSSI = -65.5
+[2026-11-22 10:40:02] [I][qc.rx:200]: RX #143: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:40:02] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:40:02] [I][qc.rx:200]: RX #144: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:40:02] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:40:02] [I][qc.rx:200]: RX #145: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B4.B4 (6)
+[2026-11-22 10:40:02] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:40:06] [I][qc.rx:200]: RX #146: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:40:06] [I][qc.rx:200]: RX #147: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:40:06] [STATE] Last RX RSSI = -65.5
+[2026-11-22 10:40:06] [I][qc.rx:200]: RX #148: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:40:06] [I][qc.rx:200]: RX #149: 6 bytes rssi=-66.5 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:40:06] [STATE] Last RX RSSI = -66.5
+[2026-11-22 10:40:06] [I][qc.rx:200]: RX #150: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:40:06] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:40:06] [I][qc.rx:200]: RX #151: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B8.B8 (6)
+[2026-11-22 10:40:07] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:40:07] [STATE] Heap Free = 242548.0
+[2026-11-22 10:40:10] [I][qc.rx:200]: RX #152: 6 bytes rssi=-66.5 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:40:10] [STATE] Last RX RSSI = -66.5
+[2026-11-22 10:40:10] [I][qc.rx:200]: RX #153: 6 bytes rssi=-66.5 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:40:10] [I][qc.rx:200]: RX #154: 6 bytes rssi=-66.5 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:40:10] [I][qc.rx:200]: RX #155: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:40:10] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:40:10] [I][qc.rx:200]: RX #156: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:40:11] [STATE] Last RX RSSI = -68.5
+[2026-11-22 10:40:11] [I][qc.rx:200]: RX #157: 6 bytes rssi=-67.0 dBm snr=0.0 dB: CB.00.E0.C6.BC.BC (6)
+[2026-11-22 10:40:11] [STATE] Last RX RSSI = -67.0
+[2026-11-22 10:40:14] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 10:40:14] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 10:40:14] [I][qc.rx:200]: RX #158: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:40:14] [I][qc.rx:200]: RX #159: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:40:14] [STATE] Last RX RSSI = -65.5
+[2026-11-22 10:40:14] [I][qc.rx:200]: RX #160: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:40:15] [I][qc.rx:200]: RX #161: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:40:15] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:40:15] [I][qc.rx:200]: RX #162: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:40:15] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:40:15] [I][qc.rx:200]: RX #163: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 10:40:18] [I][qc.rx:200]: RX #164: 6 bytes rssi=-65.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:40:18] [I][qc.rx:200]: RX #165: 6 bytes rssi=-66.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:40:18] [STATE] Last RX RSSI = -66.5
+[2026-11-22 10:40:18] [I][qc.rx:200]: RX #166: 6 bytes rssi=-66.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:40:19] [STATE] Last RX RSSI = -66.0
+[2026-11-22 10:40:19] [I][qc.rx:200]: RX #167: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:40:19] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:40:19] [I][qc.rx:200]: RX #168: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:40:19] [STATE] Last RX RSSI = -67.5
+[2026-11-22 10:40:19] [I][qc.rx:200]: RX #169: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 10:40:19] [STATE] Last RX RSSI = -68.0
+[2026-11-22 10:40:24] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 10:40:24] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-22 10:40:33] [STATE] WiFi Signal = -59.0
+[2026-11-22 10:40:34] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 10:40:34] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 10:40:35] [STATE] Uptime = 362.582
+[2026-11-22 10:40:44] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 10:40:44] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 10:40:54] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 10:40:54] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 10:41:04] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 10:41:04] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 10:41:14] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 10:41:14] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-22 10:41:14] [I][qc.rx:200]: RX #170: 18 bytes rssi=-107.5 dBm snr=0.0 dB: B9.69.89.E1.E9.78.41.58.B1.3F.6A.DE.BC.E1.37.50.FE.6F (18)
+[2026-11-22 10:41:14] [STATE] Last RX RSSI = -107.5
+[2026-11-22 10:41:14] [STATE] Last RX Length = 18.0
+[2026-11-22 10:41:24] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 10:41:24] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0

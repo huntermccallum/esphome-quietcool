@@ -1,0 +1,446 @@
+[2026-11-22 11:07:38] ### connected to quietcool-lora-v3 (ESPHome 2026.11.0, compiled 2026-11-22 10:21:20 -0700)
+[2026-11-22 11:07:38] [I][app:163]: ESPHome version 2026.11.0 compiled on 2026-11-22 10:21:20 -0700
+[2026-11-22 11:07:38] [I][app:170]: ESP32 Chip: ESP32-S3 rev0.2, 2 core(s)
+[2026-11-22 11:07:38] [W][app:188]: Set flash_chip: generic under esp32 > framework > advanced to save IRAM
+[2026-11-22 11:07:38] [C][logger:329]: Logger:
+  Max Level: DEBUG
+  Initial Level: DEBUG
+[2026-11-22 11:07:38] [C][logger:336]:   Log Baud Rate: 115200
+  Hardware UART: USB_SERIAL_JTAG
+[2026-11-22 11:07:38] [C][logger:345]:   Task Log Buffer Size: 768 bytes
+[2026-11-22 11:07:38] [C][i2c:174]: I2C Bus:
+[2026-11-22 11:07:38] [C][i2c:175]:   SDA Pin: GPIO17
+  SCL Pin: GPIO18
+  Frequency: 400000 Hz
+[2026-11-22 11:07:38] [C][i2c:191]:   Recovery: bus successfully recovered
+[2026-11-22 11:07:38] [C][i2c:027]: Results from bus scan:
+[2026-11-22 11:07:38] [C][i2c:034]: Found device at address 0x3C
+[2026-11-22 11:07:38] [C][spi:076]: SPI bus:
+[2026-11-22 11:07:39] [C][spi:137]:   CLK Pin: GPIO9
+[2026-11-22 11:07:39] [C][spi:137]:   SDI Pin: GPIO11
+[2026-11-22 11:07:39] [C][spi:137]:   SDO Pin: GPIO10
+[2026-11-22 11:07:39] [C][spi:087]:   Using HW SPI: SPI2_HOST
+[2026-11-22 11:07:39] [C][switch.gpio:105]: GPIO Switch 'vext_power'
+  Restore Mode: always ON
+[2026-11-22 11:07:39] [C][switch.gpio:137]:   Pin: GPIO36
+[2026-11-22 11:07:39] [STATE] Fan State Known = True
+[2026-11-22 11:07:39] [STATE] Timer State Known = True
+[2026-11-22 11:07:39] [STATE] Fan Timer Remaining Known = False
+[2026-11-22 11:07:39] [STATE] Fan Confirmed Off = True
+[2026-11-22 11:07:39] [STATE] Controller Fault = False
+[2026-11-22 11:07:39] [STATE] Test: PRG Button (GPIO0) = False
+[2026-11-22 11:07:39] [STATE] QuietCool Fan = False
+[2026-11-22 11:07:39] [STATE] Test: Onboard LED (GPIO35, non-inverted) = False
+[2026-11-22 11:07:39] [STATE] Timer Remaining = nan
+[2026-11-22 11:07:39] [STATE] TX Count = 23.0
+[2026-11-22 11:07:39] [STATE] RX Valid Count = 221.0
+[2026-11-22 11:07:39] [STATE] RX Rejected Count = 7.0
+[2026-11-22 11:07:39] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:07:39] [STATE] Last RX Length = 6.0
+[2026-11-22 11:07:39] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-22 11:07:39] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 11:07:39] [STATE] Loop Stack Min Free = 10398.0
+[2026-11-22 11:07:39] [STATE] Heap Free = 241796.0
+[2026-11-22 11:07:39] [STATE] WiFi Signal = -54.0
+[2026-11-22 11:07:39] [STATE] Uptime = 1324.188
+[2026-11-22 11:07:39] [STATE] Test: VBAT ADC Enable (GPIO37) = True
+[2026-11-22 11:07:39] [STATE] Command Confirmation Status = idle
+[2026-11-22 11:07:39] [STATE] Fan Evidence Source = manual_query
+[2026-11-22 11:07:39] [STATE] Last TX Command = <unknown>
+[2026-11-22 11:07:39] [STATE] Last Valid RX Frame = 0xB0
+[2026-11-22 11:07:39] [STATE] Last Confirmed Fan State = off
+[2026-11-22 11:07:39] [STATE] Fan Speed Capability = 2
+[2026-11-22 11:07:39] [STATE] Remote Sender ID = 0xCB00E0C6
+[2026-11-22 11:07:39] [STATE] Reset Reason = Reboot request from api
+[2026-11-22 11:07:39] [STATE] ESPHome Version = 2026.11.0 (config hash 0xdcec3636, built 2026-11-22 10:21:20 -0700)
+[2026-11-22 11:07:39] [STATE] Fan Timer = None
+[2026-11-22 11:07:39] [C][switch.gpio:105]: GPIO Switch 'Test: VBAT ADC Enable (GPIO37)'
+  Restore Mode: always ON
+[2026-11-22 11:07:39] [C][switch.gpio:137]:   Pin: GPIO37
+[2026-11-22 11:07:39] [C][gpio.output:009]: Binary Output:
+[2026-11-22 11:07:39] [C][gpio.output:137]:   Pin: GPIO35
+[2026-11-22 11:07:39] [C][gpio.binary_sensor:191]: GPIO Binary Sensor 'Test: PRG Button (GPIO0)'
+[2026-11-22 11:07:39] [C][gpio.binary_sensor:137]:   Pin: GPIO0
+[2026-11-22 11:07:39] [C][gpio.binary_sensor:068]:   Mode: interrupt
+[2026-11-22 11:07:39] [C][gpio.binary_sensor:070]:   Interrupt Type: ANY_EDGE
+[2026-11-22 11:07:39] [C][template.sensor:017]: Template Sensor 'Last RX RSSI'
+  State Class: 'measurement'
+  Unit of Measurement: 'dBm'
+  Accuracy Decimals: 1
+[2026-11-22 11:07:39] [C][template.sensor:207]:   Device Class: 'signal_strength'
+[2026-11-22 11:07:39] [C][template.sensor:367]:   Update Interval: 60.000s
+[2026-11-22 11:07:39] [C][template.sensor:017]: Template Sensor 'Last RX Length'
+  State Class: ''
+  Unit of Measurement: 'bytes'
+  Accuracy Decimals: 0
+[2026-11-22 11:07:39] [C][template.sensor:367]:   Update Interval: 60.000s
+[2026-11-22 11:07:39] [C][template.sensor:017]: Template Sensor 'Loop Stack Min Free'
+  State Class: ''
+  Unit of Measurement: 'B'
+  Accuracy Decimals: 0
+[2026-11-22 11:07:39] [C][template.sensor:367]:   Update Interval: 30.000s
+[2026-11-22 11:07:39] [C][uptime.sensor:017]: Uptime Sensor 'Uptime'
+  State Class: 'total_increasing'
+  Unit of Measurement: 's'
+  Accuracy Decimals: 0
+[2026-11-22 11:07:39] [C][uptime.sensor:207]:   Device Class: 'duration'
+[2026-11-22 11:07:39] [C][uptime.sensor:199]:   Icon: 'mdi:timer-outline'
+[2026-11-22 11:07:39] [C][uptime.sensor:019]:   Type: Seconds
+[2026-11-22 11:07:39] [C][light:098]: Light 'Test: Onboard LED (GPIO35, non-inverted)'
+[2026-11-22 11:07:39] [C][quietcool.fan:191]: QuietCool Confirmed Fan 'QuietCool Fan'
+[2026-11-22 11:07:39] [C][quietcool.fan:296]:   Speed: YES
+  Speed count: 2
+[2026-11-22 11:07:39] [C][quietcool.timer:012]: QuietCool Fan Timer
+[2026-11-22 11:07:39] [C][quietcool.timer:013]:   Every option transmits: a duration starts the fan (at LOW if stopped); None means run continuously and will restart a fan whose timer expired.
+[2026-11-22 11:07:39] [C][version.text_sensor:191]: Version Text Sensor 'ESPHome Version'
+[2026-11-22 11:07:39] [C][version.text_sensor:199]:   Icon: 'mdi:new-box'
+[2026-11-22 11:07:39] [C][wifi_info:191]: IP Address 'IP Address'
+[2026-11-22 11:07:39] [C][adc:017]: ADC Sensor 'Test: VBAT ADC Raw (GPIO1)'
+  State Class: 'measurement'
+  Unit of Measurement: 'V'
+  Accuracy Decimals: 3
+[2026-11-22 11:07:39] [C][adc:207]:   Device Class: 'voltage'
+[2026-11-22 11:07:39] [C][adc:137]:   Pin: GPIO1
+[2026-11-22 11:07:39] [C][adc:131]:   Channel:       0
+  Unit:          ADC1
+  Attenuation:   12 dB
+  Samples:       1
+  Sampling mode: average
+  Setup Status:
+    Handle Init:  OK
+    Config:       OK
+    Calibration:  OK
+    Overall Init: OK
+[2026-11-22 11:07:39] [C][adc:367]:   Update Interval: 10.000s
+[2026-11-22 11:07:39] [C][quietcool.button:191]: QuietCool Controller Button 'Refresh Fan State'
+[2026-11-22 11:07:39] [C][quietcool.button:191]: QuietCool Controller Button 'Learn Remote ID'
+[2026-11-22 11:07:39] [C][quietcool.button:191]: QuietCool Controller Button 'Forget Remote ID'
+[2026-11-22 11:07:39] [C][ssd1306_i2c:020]: I2C SSD1306
+  Rotations: 0 °
+  Dimensions: 128px x 64px
+[2026-11-22 11:07:39] [C][ssd1306_i2c:021]:   Model: SSD1306 128x64
+  External VCC: NO
+  Flip X: YES
+  Flip Y: YES
+  Offset X: 0
+  Offset Y: 0
+  Inverted Color: NO
+[2026-11-22 11:07:39] [C][ssd1306_i2c:031]:   Address: 0x3C
+[2026-11-22 11:07:39] [C][ssd1306_i2c:137]:   Reset Pin: GPIO21
+[2026-11-22 11:07:39] [C][ssd1306_i2c:367]:   Update Interval: 1.000s
+[2026-11-22 11:07:39] [C][sx126x:507]: SX126x:
+[2026-11-22 11:07:39] [C][sx126x:137]:   CS Pin: GPIO8
+[2026-11-22 11:07:39] [C][sx126x:137]:   BUSY Pin: GPIO13
+[2026-11-22 11:07:39] [C][sx126x:137]:   RST Pin: GPIO12
+[2026-11-22 11:07:39] [C][sx126x:137]:   DIO1 Pin: GPIO14
+[2026-11-22 11:07:39] [C][sx126x:512]:   HW Version: SX1261 V2D 2D02
+  Frequency: 433920000 Hz
+  Bandwidth: 58600 Hz
+  PA Power: 17 dBm
+  PA Ramp: 40 us
+  Payload Length: 0
+  CRC Enable: FALSE
+  Rx Start: TRUE
+[2026-11-22 11:07:39] [C][sx126x:535]:   Modulation: FSK
+  Deviation: 10000 Hz
+  Shaping: NONE
+  Preamble Size: 8
+  Preamble Detect: 0
+  Bitrate: 2400b/s
+[2026-11-22 11:07:39] [C][sx126x:561]:   Sync Value: 0x2dd4
+[2026-11-22 11:07:39] [C][sx126x:564]:   Whitening Enable: FALSE
+[2026-11-22 11:07:39] [C][network:050]: Network:
+  TCP send buffer: 5760 bytes
+[2026-11-22 11:07:39] [C][captive_portal:134]: Captive Portal:
+[2026-11-22 11:07:39] [C][wifi:1771]: WiFi:
+  Local MAC: <MAC>
+  Connected: YES
+[2026-11-22 11:07:39] [C][wifi:1461]:   IP Address: <IP>
+[2026-11-22 11:07:39] [C][wifi:1472]:   SSID: '<SSID>'
+  BSSID: <MAC>
+  Hostname: 'quietcool-lora-v3'
+  Signal strength: -55 dB ▂▄▆█
+  Channel: 6
+  Subnet: 255.255.255.0
+  Gateway: <IP>
+  DNS1: <IP>
+  DNS2: 0.0.0.0
+[2026-11-22 11:07:39] [C][esphome.ota:132]: Over-The-Air updates:
+  Address: quietcool-lora-v3.local:3232
+  Version: 2
+  Encryption: required
+[2026-11-22 11:07:39] [C][safe_mode:058]: Safe Mode:
+  Successful after: 60s
+  Invoke after: 10 attempts
+  Duration: 300s
+[2026-11-22 11:07:39] [C][safe_mode:075]:   Bootloader rollback: support unknown
+[2026-11-22 11:07:39] [C][web_server.ota:245]: Web Server OTA
+[2026-11-22 11:07:39] [C][api:374]: Server:
+  Address: quietcool-lora-v3.local:6053
+  Listen backlog: 4
+  Max connections: 5
+[2026-11-22 11:07:39] [C][api:381]:   Noise encryption: YES
+[2026-11-22 11:07:39] [C][wifi_signal.sensor:017]: WiFi Signal 'WiFi Signal'
+  State Class: 'measurement'
+  Unit of Measurement: 'dBm'
+  Accuracy Decimals: 0
+[2026-11-22 11:07:39] [C][wifi_signal.sensor:207]:   Device Class: 'signal_strength'
+[2026-11-22 11:07:39] [C][mdns:336]: mDNS:
+  Hostname: quietcool-lora-v3
+[2026-11-22 11:07:39] [C][debug:017]: Debug component:
+[2026-11-22 11:07:39] [C][debug:017]:   Free space on heap 'Heap Free'
+    State Class: 'measurement'
+    Unit of Measurement: 'B'
+    Accuracy Decimals: 0
+[2026-11-22 11:07:39] [C][debug:199]:     Icon: 'mdi:counter'
+[2026-11-22 11:07:39] [D][debug:031]: ESPHome version 2026.11.0
+[2026-11-22 11:07:39] [D][debug:035]: Free Heap Size: 228524 bytes
+[2026-11-22 11:07:39] [D][debug:044]: Uptime: 0d 00h 22m 08s
+[2026-11-22 11:07:39] [D][debug:260]: ESP32 debug info:
+  Chip: ESP32-S3
+  Cores: 2
+  Revision: 2
+  CPU Frequency: 240 MHz
+  ESP-IDF Version: v5.5.6
+  EFuse MAC: <MAC>
+  Reset Reason: Reboot request from api
+  Wakeup Cause: undefined
+[2026-11-22 11:07:39] [D][debug:280]:   Framework: ESP-IDF
+[2026-11-22 11:07:39] [C][debug:163]: Partition table:
+  Name         Type Subtype  Address    Size      
+[2026-11-22 11:07:39] [C][debug:170]:   otadata      1    0        0x00009000 0x00002000
+[2026-11-22 11:07:39] [C][debug:170]:   phy_init     1    1        0x0000B000 0x00001000
+[2026-11-22 11:07:39] [C][debug:170]:   app0         0    16       0x00010000 0x001C0000
+[2026-11-22 11:07:39] [C][debug:170]:   app1         0    17       0x001D0000 0x001C0000
+[2026-11-22 11:07:39] [C][debug:170]:   nvs          1    2        0x00390000 0x00070000
+[2026-11-22 11:07:39] [C][quietcool:162]: QuietCool confirmation controller
+[2026-11-22 11:07:44] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 11:07:44] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 11:07:54] [I][qc.rx:200]: RX #292: 26 bytes rssi=-111.0 dBm snr=0.0 dB: 3E.8C.84.FA.CD.F6.0E.FD.0D.37.6D.9C.38.B6.0E.EE.52.22.ED.8A.24.A2.BE.90.7C.DD (26)
+[2026-11-22 11:07:54] [STATE] Last RX RSSI = -111.0
+[2026-11-22 11:07:54] [STATE] Last RX Length = 26.0
+[2026-11-22 11:07:54] [STATE] RX Rejected Count = 8.0
+[2026-11-22 11:08:03] [STATE] Heap Free = 240924.0
+[2026-11-22 11:08:04] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 11:08:04] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 11:08:24] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 11:08:24] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-22 11:08:28] [D][quietcool.fan:049]: FanCall queued: state=ON speed=1; awaiting confirmation
+[2026-11-22 11:08:28] [D][quietcool.core:259]: event=request_accepted state=command_pending
+[2026-11-22 11:08:28] [STATE] Command Confirmation Status = pending
+[2026-11-22 11:08:28] [STATE] Fan State Known = False
+[2026-11-22 11:08:28] [STATE] Timer State Known = False
+[2026-11-22 11:08:28] [STATE] Fan Confirmed Off = False
+[2026-11-22 11:08:28] [STATE] Timer Remaining = nan
+[2026-11-22 11:08:28] [STATE] Fan Evidence Source = unavailable
+[2026-11-22 11:08:28] [STATE] Last Confirmed Fan State = unknown
+[2026-11-22 11:08:28] [STATE] TX Count = 24.0
+[2026-11-22 11:08:28] [STATE] Last TX Command = 0x9F
+[2026-11-22 11:08:28] [I][qc.rx:200]: RX #293: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.9F.9F (6)
+[2026-11-22 11:08:28] [D][quietcool.core:259]: event=diagnostic state=post_command_listening
+[2026-11-22 11:08:28] [STATE] Last RX RSSI = -68.5
+[2026-11-22 11:08:28] [STATE] Last RX Length = 6.0
+[2026-11-22 11:08:28] [STATE] Last Valid RX Frame = 0x9F
+[2026-11-22 11:08:28] [STATE] RX Valid Count = 222.0
+[2026-11-22 11:08:28] [I][qc.rx:200]: RX #294: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.9F.9F (6)
+[2026-11-22 11:08:28] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:08:28] [I][qc.rx:200]: RX #295: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.9F.9F (6)
+[2026-11-22 11:08:28] [I][quietcool.core:257]: event=transaction_finished state=post_command_listening
+[2026-11-22 11:08:29] [STATE] Last RX RSSI = -68.5
+[2026-11-22 11:08:29] [STATE] QuietCool Fan = True
+[2026-11-22 11:08:29] [STATE] Fan State Known = True
+[2026-11-22 11:08:29] [STATE] Timer State Known = True
+[2026-11-22 11:08:29] [STATE] Timer Remaining = nan
+[2026-11-22 11:08:29] [STATE] Fan Evidence Source = post_command
+[2026-11-22 11:08:29] [STATE] Last Confirmed Fan State = low
+[2026-11-22 11:08:29] [STATE] Command Confirmation Status = confirmed
+[2026-11-22 11:08:29] [STATE] RX Valid Count = 224.0
+[2026-11-22 11:08:31] [D][preferences:255]: Writing 1 items: 0 cached, 1 written, 0 failed
+[2026-11-22 11:08:33] [STATE] Heap Free = 240888.0
+[2026-11-22 11:08:34] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 11:08:34] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 11:08:35] [STATE] WiFi Signal = -53.0
+[2026-11-22 11:08:35] [STATE] Uptime = 1384.188
+[2026-11-22 11:08:36] [STATE] Loop Stack Min Free = 9390.0
+[2026-11-22 11:08:44] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 11:08:44] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-22 11:08:45] [D][quietcool.fan:049]: FanCall queued: state=ON speed=2; awaiting confirmation
+[2026-11-22 11:08:45] [D][quietcool.core:259]: event=request_accepted state=command_pending
+[2026-11-22 11:08:45] [STATE] Command Confirmation Status = pending
+[2026-11-22 11:08:45] [STATE] Fan State Known = False
+[2026-11-22 11:08:45] [STATE] Timer State Known = False
+[2026-11-22 11:08:45] [STATE] Timer Remaining = nan
+[2026-11-22 11:08:45] [STATE] Fan Evidence Source = unavailable
+[2026-11-22 11:08:45] [STATE] Last Confirmed Fan State = unknown
+[2026-11-22 11:08:45] [STATE] TX Count = 25.0
+[2026-11-22 11:08:45] [STATE] Last TX Command = 0xBF
+[2026-11-22 11:08:46] [I][qc.rx:200]: RX #296: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 11:08:46] [STATE] Last RX RSSI = -69.5
+[2026-11-22 11:08:46] [STATE] Last Valid RX Frame = 0xBF
+[2026-11-22 11:08:46] [STATE] RX Valid Count = 225.0
+[2026-11-22 11:08:46] [I][qc.rx:200]: RX #297: 6 bytes rssi=-70.0 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 11:08:46] [I][quietcool.core:257]: event=transaction_finished state=post_command_listening
+[2026-11-22 11:08:46] [STATE] Last RX RSSI = -70.0
+[2026-11-22 11:08:46] [STATE] Fan State Known = True
+[2026-11-22 11:08:46] [STATE] Timer State Known = True
+[2026-11-22 11:08:46] [STATE] Timer Remaining = nan
+[2026-11-22 11:08:46] [STATE] Fan Evidence Source = post_command
+[2026-11-22 11:08:46] [STATE] Last Confirmed Fan State = high
+[2026-11-22 11:08:46] [STATE] Command Confirmation Status = confirmed
+[2026-11-22 11:08:46] [I][qc.rx:200]: RX #298: 6 bytes rssi=-70.0 dBm snr=0.0 dB: CB.00.E0.C6.BF.BF (6)
+[2026-11-22 11:08:47] [STATE] RX Valid Count = 227.0
+[2026-11-22 11:08:54] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 11:08:54] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 11:08:56] [D][quietcool.fan:049]: FanCall queued: state=OFF speed=2; awaiting confirmation
+[2026-11-22 11:08:56] [D][quietcool.core:259]: event=request_accepted state=command_pending
+[2026-11-22 11:08:56] [STATE] Command Confirmation Status = pending
+[2026-11-22 11:08:56] [STATE] Fan State Known = False
+[2026-11-22 11:08:56] [STATE] Timer State Known = False
+[2026-11-22 11:08:56] [STATE] Timer Remaining = nan
+[2026-11-22 11:08:56] [STATE] Fan Evidence Source = unavailable
+[2026-11-22 11:08:56] [STATE] Last Confirmed Fan State = unknown
+[2026-11-22 11:08:56] [STATE] TX Count = 26.0
+[2026-11-22 11:08:56] [STATE] Last TX Command = 0xB0
+[2026-11-22 11:08:57] [I][qc.rx:200]: RX #299: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 11:08:57] [STATE] Last RX RSSI = -68.0
+[2026-11-22 11:08:57] [STATE] Last Valid RX Frame = 0xB0
+[2026-11-22 11:08:57] [STATE] RX Valid Count = 228.0
+[2026-11-22 11:08:57] [I][qc.rx:200]: RX #300: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 11:08:57] [I][quietcool.core:257]: event=transaction_finished state=post_command_listening
+[2026-11-22 11:08:57] [STATE] Last RX RSSI = -67.5
+[2026-11-22 11:08:57] [STATE] QuietCool Fan = False
+[2026-11-22 11:08:57] [STATE] Fan State Known = True
+[2026-11-22 11:08:57] [STATE] Timer State Known = True
+[2026-11-22 11:08:57] [STATE] Fan Confirmed Off = True
+[2026-11-22 11:08:57] [STATE] Timer Remaining = nan
+[2026-11-22 11:08:57] [STATE] Fan Evidence Source = post_command
+[2026-11-22 11:08:57] [STATE] Last Confirmed Fan State = off
+[2026-11-22 11:08:57] [STATE] Command Confirmation Status = confirmed
+[2026-11-22 11:08:57] [I][qc.rx:200]: RX #301: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.B0.B0 (6)
+[2026-11-22 11:08:57] [STATE] Last RX RSSI = -68.0
+[2026-11-22 11:08:58] [STATE] RX Valid Count = 230.0
+[2026-11-22 11:09:03] [STATE] Heap Free = 240832.0
+[2026-11-22 11:09:06] [STATE] Loop Stack Min Free = 9294.0
+[2026-11-22 11:09:11] [D][quietcool.timer:073]: Timer '1 hour' queued as 0x91; awaiting confirmation
+[2026-11-22 11:09:11] [D][quietcool.core:259]: event=request_accepted state=command_pending
+[2026-11-22 11:09:11] [STATE] Command Confirmation Status = pending
+[2026-11-22 11:09:11] [STATE] Fan State Known = False
+[2026-11-22 11:09:11] [STATE] Timer State Known = False
+[2026-11-22 11:09:11] [STATE] Fan Confirmed Off = False
+[2026-11-22 11:09:11] [STATE] Timer Remaining = nan
+[2026-11-22 11:09:11] [STATE] Fan Evidence Source = unavailable
+[2026-11-22 11:09:11] [STATE] Last Confirmed Fan State = unknown
+[2026-11-22 11:09:11] [STATE] TX Count = 27.0
+[2026-11-22 11:09:11] [STATE] Last TX Command = 0x91
+[2026-11-22 11:09:11] [I][qc.rx:200]: RX #302: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:09:11] [D][quietcool.core:259]: event=diagnostic state=post_command_listening
+[2026-11-22 11:09:11] [STATE] Last Valid RX Frame = 0x91
+[2026-11-22 11:09:11] [STATE] RX Valid Count = 231.0
+[2026-11-22 11:09:11] [I][qc.rx:200]: RX #303: 6 bytes rssi=-68.0 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:09:11] [I][qc.rx:200]: RX #304: 6 bytes rssi=-67.5 dBm snr=0.0 dB: CB.00.E0.C6.91.91 (6)
+[2026-11-22 11:09:11] [I][quietcool.core:257]: event=transaction_finished state=post_command_listening
+[2026-11-22 11:09:11] [STATE] Last RX RSSI = -67.5
+[2026-11-22 11:09:11] [STATE] QuietCool Fan = True
+[2026-11-22 11:09:11] [STATE] Fan Timer = 1 hour
+[2026-11-22 11:09:11] [STATE] Timer Remaining = 59.989
+[2026-11-22 11:09:11] [STATE] Fan State Known = True
+[2026-11-22 11:09:11] [STATE] Timer State Known = True
+[2026-11-22 11:09:11] [STATE] Fan Timer Remaining Known = True
+[2026-11-22 11:09:11] [STATE] Fan Evidence Source = post_command
+[2026-11-22 11:09:11] [STATE] Last Confirmed Fan State = low 1h
+[2026-11-22 11:09:11] [STATE] Command Confirmation Status = confirmed
+[2026-11-22 11:09:12] [STATE] RX Valid Count = 233.0
+[2026-11-22 11:09:26] [D][quietcool.fan:049]: FanCall queued: state=OFF speed=1; awaiting confirmation
+[2026-11-22 11:09:26] [D][quietcool.core:259]: event=request_accepted state=command_pending
+[2026-11-22 11:09:26] [STATE] Command Confirmation Status = pending
+[2026-11-22 11:09:26] [STATE] Fan State Known = False
+[2026-11-22 11:09:26] [STATE] Timer State Known = False
+[2026-11-22 11:09:26] [STATE] Fan Timer Remaining Known = False
+[2026-11-22 11:09:26] [STATE] Timer Remaining = nan
+[2026-11-22 11:09:26] [STATE] Fan Evidence Source = unavailable
+[2026-11-22 11:09:26] [STATE] Last Confirmed Fan State = unknown
+[2026-11-22 11:09:26] [STATE] TX Count = 28.0
+[2026-11-22 11:09:26] [STATE] Last TX Command = 0x90
+[2026-11-22 11:09:27] [I][qc.rx:200]: RX #305: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:09:27] [STATE] Last RX RSSI = -68.5
+[2026-11-22 11:09:27] [STATE] Last Valid RX Frame = 0x90
+[2026-11-22 11:09:27] [STATE] RX Valid Count = 234.0
+[2026-11-22 11:09:27] [I][qc.rx:200]: RX #306: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:09:27] [I][quietcool.core:257]: event=transaction_finished state=post_command_listening
+[2026-11-22 11:09:27] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:09:27] [STATE] QuietCool Fan = False
+[2026-11-22 11:09:27] [STATE] Fan Timer = None
+[2026-11-22 11:09:27] [STATE] Fan State Known = True
+[2026-11-22 11:09:27] [STATE] Timer State Known = True
+[2026-11-22 11:09:27] [STATE] Fan Confirmed Off = True
+[2026-11-22 11:09:27] [STATE] Timer Remaining = nan
+[2026-11-22 11:09:27] [STATE] Fan Evidence Source = post_command
+[2026-11-22 11:09:27] [STATE] Last Confirmed Fan State = off
+[2026-11-22 11:09:27] [STATE] Command Confirmation Status = confirmed
+[2026-11-22 11:09:27] [I][qc.rx:200]: RX #307: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:09:27] [STATE] Last RX RSSI = -68.5
+[2026-11-22 11:09:28] [STATE] RX Valid Count = 236.0
+[2026-11-22 11:09:33] [STATE] Heap Free = 240856.0
+[2026-11-22 11:09:34] [STATE] Battery Voltage (x4.9) = 0.0
+[2026-11-22 11:09:34] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.0
+[2026-11-22 11:09:35] [STATE] WiFi Signal = -52.0
+[2026-11-22 11:09:35] [STATE] Uptime = 1444.188
+[2026-11-22 11:09:36] [STATE] Loop Stack Min Free = 8702.0
+[2026-11-22 11:09:37] [D][quietcool.fan:049]: FanCall queued: state=OFF speed=1; awaiting confirmation
+[2026-11-22 11:09:37] [D][quietcool.core:259]: event=request_accepted state=command_pending
+[2026-11-22 11:09:37] [STATE] Command Confirmation Status = pending
+[2026-11-22 11:09:37] [STATE] Fan State Known = False
+[2026-11-22 11:09:37] [STATE] Timer State Known = False
+[2026-11-22 11:09:37] [STATE] Fan Confirmed Off = False
+[2026-11-22 11:09:37] [STATE] Timer Remaining = nan
+[2026-11-22 11:09:37] [STATE] Fan Evidence Source = unavailable
+[2026-11-22 11:09:37] [STATE] Last Confirmed Fan State = unknown
+[2026-11-22 11:09:37] [STATE] TX Count = 29.0
+[2026-11-22 11:09:37] [D][quietcool.fan:049]: FanCall queued: state=OFF speed=1; awaiting confirmation
+[2026-11-22 11:09:37] [I][qc.rx:200]: RX #308: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:09:37] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:09:37] [STATE] RX Valid Count = 237.0
+[2026-11-22 11:09:37] [I][qc.rx:200]: RX #309: 6 bytes rssi=-68.5 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:09:37] [I][quietcool.core:257]: event=transaction_finished state=post_command_listening
+[2026-11-22 11:09:37] [D][quietcool.fan:049]: FanCall queued: state=OFF speed=1; awaiting confirmation
+[2026-11-22 11:09:37] [D][quietcool.core:259]: event=request_accepted state=response_tail
+[2026-11-22 11:09:37] [STATE] Last RX RSSI = -68.5
+[2026-11-22 11:09:37] [STATE] Fan State Known = True
+[2026-11-22 11:09:37] [STATE] Timer State Known = True
+[2026-11-22 11:09:37] [STATE] Fan Confirmed Off = True
+[2026-11-22 11:09:37] [STATE] Timer Remaining = nan
+[2026-11-22 11:09:37] [STATE] Fan Evidence Source = post_command
+[2026-11-22 11:09:37] [STATE] Last Confirmed Fan State = off
+[2026-11-22 11:09:38] [I][qc.rx:200]: RX #310: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:09:38] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:09:38] [STATE] RX Valid Count = 239.0
+[2026-11-22 11:09:39] [STATE] Fan State Known = False
+[2026-11-22 11:09:39] [STATE] Timer State Known = False
+[2026-11-22 11:09:39] [STATE] Fan Confirmed Off = False
+[2026-11-22 11:09:39] [STATE] Timer Remaining = nan
+[2026-11-22 11:09:39] [STATE] Fan Evidence Source = unavailable
+[2026-11-22 11:09:39] [STATE] Last Confirmed Fan State = unknown
+[2026-11-22 11:09:40] [STATE] TX Count = 30.0
+[2026-11-22 11:09:40] [I][qc.rx:200]: RX #311: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:09:40] [STATE] RX Valid Count = 240.0
+[2026-11-22 11:09:40] [I][qc.rx:200]: RX #312: 6 bytes rssi=-69.5 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:09:40] [I][quietcool.core:257]: event=transaction_finished state=post_command_listening
+[2026-11-22 11:09:40] [STATE] Last RX RSSI = -69.5
+[2026-11-22 11:09:40] [STATE] Fan State Known = True
+[2026-11-22 11:09:40] [STATE] Timer State Known = True
+[2026-11-22 11:09:40] [STATE] Fan Confirmed Off = True
+[2026-11-22 11:09:40] [STATE] Timer Remaining = nan
+[2026-11-22 11:09:40] [STATE] Fan Evidence Source = post_command
+[2026-11-22 11:09:40] [STATE] Last Confirmed Fan State = off
+[2026-11-22 11:09:40] [STATE] Command Confirmation Status = confirmed
+[2026-11-22 11:09:40] [I][qc.rx:200]: RX #313: 6 bytes rssi=-69.0 dBm snr=0.0 dB: CB.00.E0.C6.90.90 (6)
+[2026-11-22 11:09:40] [STATE] Last RX RSSI = -69.0
+[2026-11-22 11:09:41] [STATE] RX Valid Count = 242.0
+[2026-11-22 11:09:44] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 11:09:44] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 11:10:04] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 11:10:04] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-22 11:10:14] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-22 11:10:14] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
+[2026-11-22 11:10:24] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-22 11:10:24] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002

@@ -1,0 +1,218 @@
+[2026-11-23 11:59:09] ### connected to quietcool-lora-v3 (ESPHome 2026.11.0, compiled 2026-11-22 10:21:20 -0700)
+[2026-11-23 11:59:09] [I][app:163]: ESPHome version 2026.11.0 compiled on 2026-11-22 10:21:20 -0700
+[2026-11-23 11:59:09] [I][app:170]: ESP32 Chip: ESP32-S3 rev0.2, 2 core(s)
+[2026-11-23 11:59:09] [W][app:188]: Set flash_chip: generic under esp32 > framework > advanced to save IRAM
+[2026-11-23 11:59:09] [C][logger:329]: Logger:
+  Max Level: DEBUG
+  Initial Level: DEBUG
+[2026-11-23 11:59:09] [C][logger:336]:   Log Baud Rate: 115200
+  Hardware UART: USB_SERIAL_JTAG
+[2026-11-23 11:59:09] [C][logger:345]:   Task Log Buffer Size: 768 bytes
+[2026-11-23 11:59:09] [C][i2c:174]: I2C Bus:
+[2026-11-23 11:59:09] [C][i2c:175]:   SDA Pin: GPIO17
+  SCL Pin: GPIO18
+  Frequency: 400000 Hz
+[2026-11-23 11:59:09] [C][i2c:191]:   Recovery: bus successfully recovered
+[2026-11-23 11:59:09] [C][i2c:027]: Results from bus scan:
+[2026-11-23 11:59:09] [C][i2c:034]: Found device at address 0x3C
+[2026-11-23 11:59:10] [C][spi:076]: SPI bus:
+[2026-11-23 11:59:10] [C][spi:137]:   CLK Pin: GPIO9
+[2026-11-23 11:59:10] [C][spi:137]:   SDI Pin: GPIO11
+[2026-11-23 11:59:10] [C][spi:137]:   SDO Pin: GPIO10
+[2026-11-23 11:59:10] [C][spi:087]:   Using HW SPI: SPI2_HOST
+[2026-11-23 11:59:10] [C][switch.gpio:105]: GPIO Switch 'vext_power'
+  Restore Mode: always ON
+[2026-11-23 11:59:10] [C][switch.gpio:137]:   Pin: GPIO36
+[2026-11-23 11:59:10] [C][switch.gpio:105]: GPIO Switch 'Test: VBAT ADC Enable (GPIO37)'
+  Restore Mode: always ON
+[2026-11-23 11:59:10] [C][switch.gpio:137]:   Pin: GPIO37
+[2026-11-23 11:59:10] [STATE] Fan State Known = True
+[2026-11-23 11:59:10] [STATE] Timer State Known = True
+[2026-11-23 11:59:10] [STATE] Fan Timer Remaining Known = False
+[2026-11-23 11:59:10] [STATE] Fan Confirmed Off = True
+[2026-11-23 11:59:10] [STATE] Controller Fault = False
+[2026-11-23 11:59:10] [STATE] Test: PRG Button (GPIO0) = False
+[2026-11-23 11:59:10] [STATE] QuietCool Fan = False
+[2026-11-23 11:59:10] [STATE] Test: Onboard LED (GPIO35, non-inverted) = False
+[2026-11-23 11:59:10] [STATE] Timer Remaining = nan
+[2026-11-23 11:59:10] [STATE] TX Count = 242.0
+[2026-11-23 11:59:10] [STATE] RX Valid Count = 914.0
+[2026-11-23 11:59:10] [STATE] RX Rejected Count = 20.0
+[2026-11-23 11:59:10] [STATE] Last RX RSSI = -68.0
+[2026-11-23 11:59:10] [STATE] Last RX Length = 6.0
+[2026-11-23 11:59:10] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.002
+[2026-11-23 11:59:10] [STATE] Battery Voltage (x4.9) = 0.01
+[2026-11-23 11:59:10] [STATE] Loop Stack Min Free = 8702.0
+[2026-11-23 11:59:10] [STATE] Heap Free = 241968.0
+[2026-11-23 11:59:10] [STATE] WiFi Signal = -50.0
+[2026-11-23 11:59:10] [STATE] Uptime = 90784.203
+[2026-11-23 11:59:10] [STATE] Test: VBAT ADC Enable (GPIO37) = True
+[2026-11-23 11:59:10] [STATE] Command Confirmation Status = confirmed
+[2026-11-23 11:59:10] [STATE] Fan Evidence Source = heartbeat_query
+[2026-11-23 11:59:10] [STATE] Last TX Command = 0xB0
+[2026-11-23 11:59:10] [STATE] Last Valid RX Frame = 0xB0
+[2026-11-23 11:59:10] [STATE] Last Confirmed Fan State = off
+[2026-11-23 11:59:10] [STATE] Fan Speed Capability = 2
+[2026-11-23 11:59:10] [STATE] Remote Sender ID = 0xCB00E0C6
+[2026-11-23 11:59:10] [STATE] Reset Reason = Reboot request from api
+[2026-11-23 11:59:10] [STATE] ESPHome Version = 2026.11.0 (config hash 0xdcec3636, built 2026-11-22 10:21:20 -0700)
+[2026-11-23 11:59:10] [STATE] Fan Timer = None
+[2026-11-23 11:59:10] [C][gpio.output:009]: Binary Output:
+[2026-11-23 11:59:10] [C][gpio.output:137]:   Pin: GPIO35
+[2026-11-23 11:59:10] [C][gpio.binary_sensor:191]: GPIO Binary Sensor 'Test: PRG Button (GPIO0)'
+[2026-11-23 11:59:10] [C][gpio.binary_sensor:137]:   Pin: GPIO0
+[2026-11-23 11:59:10] [C][gpio.binary_sensor:068]:   Mode: interrupt
+[2026-11-23 11:59:10] [C][gpio.binary_sensor:070]:   Interrupt Type: ANY_EDGE
+[2026-11-23 11:59:10] [C][template.sensor:017]: Template Sensor 'Last RX RSSI'
+  State Class: 'measurement'
+  Unit of Measurement: 'dBm'
+  Accuracy Decimals: 1
+[2026-11-23 11:59:10] [C][template.sensor:207]:   Device Class: 'signal_strength'
+[2026-11-23 11:59:10] [C][template.sensor:367]:   Update Interval: 60.000s
+[2026-11-23 11:59:10] [C][template.sensor:017]: Template Sensor 'Last RX Length'
+  State Class: ''
+  Unit of Measurement: 'bytes'
+  Accuracy Decimals: 0
+[2026-11-23 11:59:10] [C][template.sensor:367]:   Update Interval: 60.000s
+[2026-11-23 11:59:10] [C][template.sensor:017]: Template Sensor 'Loop Stack Min Free'
+  State Class: ''
+  Unit of Measurement: 'B'
+  Accuracy Decimals: 0
+[2026-11-23 11:59:10] [C][template.sensor:367]:   Update Interval: 30.000s
+[2026-11-23 11:59:10] [C][uptime.sensor:017]: Uptime Sensor 'Uptime'
+  State Class: 'total_increasing'
+  Unit of Measurement: 's'
+  Accuracy Decimals: 0
+[2026-11-23 11:59:10] [C][uptime.sensor:207]:   Device Class: 'duration'
+[2026-11-23 11:59:10] [C][uptime.sensor:199]:   Icon: 'mdi:timer-outline'
+[2026-11-23 11:59:10] [C][uptime.sensor:019]:   Type: Seconds
+[2026-11-23 11:59:10] [C][light:098]: Light 'Test: Onboard LED (GPIO35, non-inverted)'
+[2026-11-23 11:59:10] [C][quietcool.fan:191]: QuietCool Confirmed Fan 'QuietCool Fan'
+[2026-11-23 11:59:10] [C][quietcool.fan:296]:   Speed: YES
+  Speed count: 2
+[2026-11-23 11:59:10] [C][quietcool.timer:012]: QuietCool Fan Timer
+[2026-11-23 11:59:10] [C][quietcool.timer:013]:   Every option transmits: a duration starts the fan (at LOW if stopped); None means run continuously and will restart a fan whose timer expired.
+[2026-11-23 11:59:10] [C][version.text_sensor:191]: Version Text Sensor 'ESPHome Version'
+[2026-11-23 11:59:10] [C][version.text_sensor:199]:   Icon: 'mdi:new-box'
+[2026-11-23 11:59:10] [C][wifi_info:191]: IP Address 'IP Address'
+[2026-11-23 11:59:10] [C][adc:017]: ADC Sensor 'Test: VBAT ADC Raw (GPIO1)'
+  State Class: 'measurement'
+  Unit of Measurement: 'V'
+  Accuracy Decimals: 3
+[2026-11-23 11:59:10] [C][adc:207]:   Device Class: 'voltage'
+[2026-11-23 11:59:10] [C][adc:137]:   Pin: GPIO1
+[2026-11-23 11:59:10] [C][adc:131]:   Channel:       0
+  Unit:          ADC1
+  Attenuation:   12 dB
+  Samples:       1
+  Sampling mode: average
+  Setup Status:
+    Handle Init:  OK
+    Config:       OK
+    Calibration:  OK
+    Overall Init: OK
+[2026-11-23 11:59:10] [C][adc:367]:   Update Interval: 10.000s
+[2026-11-23 11:59:10] [C][quietcool.button:191]: QuietCool Controller Button 'Refresh Fan State'
+[2026-11-23 11:59:10] [C][quietcool.button:191]: QuietCool Controller Button 'Learn Remote ID'
+[2026-11-23 11:59:10] [C][quietcool.button:191]: QuietCool Controller Button 'Forget Remote ID'
+[2026-11-23 11:59:10] [C][ssd1306_i2c:020]: I2C SSD1306
+  Rotations: 0 °
+  Dimensions: 128px x 64px
+[2026-11-23 11:59:10] [C][ssd1306_i2c:021]:   Model: SSD1306 128x64
+  External VCC: NO
+  Flip X: YES
+  Flip Y: YES
+  Offset X: 0
+  Offset Y: 0
+  Inverted Color: NO
+[2026-11-23 11:59:10] [C][ssd1306_i2c:031]:   Address: 0x3C
+[2026-11-23 11:59:10] [C][ssd1306_i2c:137]:   Reset Pin: GPIO21
+[2026-11-23 11:59:10] [C][ssd1306_i2c:367]:   Update Interval: 1.000s
+[2026-11-23 11:59:10] [C][sx126x:507]: SX126x:
+[2026-11-23 11:59:10] [C][sx126x:137]:   CS Pin: GPIO8
+[2026-11-23 11:59:10] [C][sx126x:137]:   BUSY Pin: GPIO13
+[2026-11-23 11:59:10] [C][sx126x:137]:   RST Pin: GPIO12
+[2026-11-23 11:59:10] [C][sx126x:137]:   DIO1 Pin: GPIO14
+[2026-11-23 11:59:10] [C][sx126x:512]:   HW Version: SX1261 V2D 2D02
+  Frequency: 433920000 Hz
+  Bandwidth: 58600 Hz
+  PA Power: 17 dBm
+  PA Ramp: 40 us
+  Payload Length: 0
+  CRC Enable: FALSE
+  Rx Start: TRUE
+[2026-11-23 11:59:10] [C][sx126x:535]:   Modulation: FSK
+  Deviation: 10000 Hz
+  Shaping: NONE
+  Preamble Size: 8
+  Preamble Detect: 0
+  Bitrate: 2400b/s
+[2026-11-23 11:59:10] [C][sx126x:561]:   Sync Value: 0x2dd4
+[2026-11-23 11:59:10] [C][sx126x:564]:   Whitening Enable: FALSE
+[2026-11-23 11:59:10] [C][network:050]: Network:
+  TCP send buffer: 5760 bytes
+[2026-11-23 11:59:10] [C][captive_portal:134]: Captive Portal:
+[2026-11-23 11:59:10] [C][wifi:1771]: WiFi:
+  Local MAC: <MAC>
+  Connected: YES
+[2026-11-23 11:59:10] [C][wifi:1461]:   IP Address: <IP>
+[2026-11-23 11:59:10] [C][wifi:1472]:   SSID: '<SSID>'
+  BSSID: <MAC>
+  Hostname: 'quietcool-lora-v3'
+  Signal strength: -51 dB ▂▄▆█
+  Channel: 1
+  Subnet: 255.255.255.0
+  Gateway: <IP>
+  DNS1: <IP>
+  DNS2: 0.0.0.0
+[2026-11-23 11:59:10] [C][esphome.ota:132]: Over-The-Air updates:
+  Address: quietcool-lora-v3.local:3232
+  Version: 2
+  Encryption: required
+[2026-11-23 11:59:10] [C][safe_mode:058]: Safe Mode:
+  Successful after: 60s
+  Invoke after: 10 attempts
+  Duration: 300s
+[2026-11-23 11:59:10] [C][safe_mode:075]:   Bootloader rollback: support unknown
+[2026-11-23 11:59:10] [C][web_server.ota:245]: Web Server OTA
+[2026-11-23 11:59:10] [C][api:374]: Server:
+  Address: quietcool-lora-v3.local:6053
+  Listen backlog: 4
+  Max connections: 5
+[2026-11-23 11:59:10] [C][api:381]:   Noise encryption: YES
+[2026-11-23 11:59:10] [C][wifi_signal.sensor:017]: WiFi Signal 'WiFi Signal'
+  State Class: 'measurement'
+  Unit of Measurement: 'dBm'
+  Accuracy Decimals: 0
+[2026-11-23 11:59:10] [C][wifi_signal.sensor:207]:   Device Class: 'signal_strength'
+[2026-11-23 11:59:11] [C][mdns:336]: mDNS:
+  Hostname: quietcool-lora-v3
+[2026-11-23 11:59:11] [C][debug:017]: Debug component:
+[2026-11-23 11:59:11] [C][debug:017]:   Free space on heap 'Heap Free'
+    State Class: 'measurement'
+    Unit of Measurement: 'B'
+    Accuracy Decimals: 0
+[2026-11-23 11:59:11] [C][debug:199]:     Icon: 'mdi:counter'
+[2026-11-23 11:59:11] [D][debug:031]: ESPHome version 2026.11.0
+[2026-11-23 11:59:11] [D][debug:035]: Free Heap Size: 221796 bytes
+[2026-11-23 11:59:11] [D][debug:044]: Uptime: 1d 01h 13m 38s
+[2026-11-23 11:59:11] [D][debug:260]: ESP32 debug info:
+  Chip: ESP32-S3
+  Cores: 2
+  Revision: 2
+  CPU Frequency: 240 MHz
+  ESP-IDF Version: v5.5.6
+  EFuse MAC: <MAC>
+  Reset Reason: Reboot request from api
+  Wakeup Cause: undefined
+[2026-11-23 11:59:11] [D][debug:280]:   Framework: ESP-IDF
+[2026-11-23 11:59:11] [C][debug:163]: Partition table:
+  Name         Type Subtype  Address    Size      
+[2026-11-23 11:59:11] [C][debug:170]:   otadata      1    0        0x00009000 0x00002000
+[2026-11-23 11:59:11] [C][debug:170]:   phy_init     1    1        0x0000B000 0x00001000
+[2026-11-23 11:59:11] [C][debug:170]:   app0         0    16       0x00010000 0x001C0000
+[2026-11-23 11:59:11] [C][debug:170]:   app1         0    17       0x001D0000 0x001C0000
+[2026-11-23 11:59:11] [C][debug:170]:   nvs          1    2        0x00390000 0x00070000
+[2026-11-23 11:59:11] [C][quietcool:162]: QuietCool confirmation controller
+[2026-11-23 11:59:15] [STATE] Battery Voltage (x4.9) = 0.005
+[2026-11-23 11:59:15] [STATE] Test: VBAT ADC Raw (GPIO1) = 0.001
